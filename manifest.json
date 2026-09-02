@@ -1,0 +1,66 @@
+{
+  "short_name": "Venus healthcare",
+  "name": "Venus Healthcare Services",
+  "icons": [
+    {
+      "src": "/images/pwa/icons/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    
+    {
+      "src": "/images/pwa/icons/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/pwa/icons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://venushealthcare.co.zw/",
+  "background_color": "#6AAA47",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#6AAA47",
+  "shortcuts": [
+    {
+      "name": "Book an appointment",
+      "short_name": "Appointment",
+      "description": "Schedule or book an appointment with us",
+      "url": "/#appointments",
+      "icons": [
+        {
+          "src": "/images/pwa/icons/today.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Get in touch with us",
+      "short_name": "Contact Us",
+      "description": "Get in touch with us",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/images/pwa/icons/tomorrow.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "venus Healthcare services",
+  "screenshots": [
+    {
+      "src": "/images/pwa/screenshots/",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/images/pwa/screenshots/",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Venus Healthcare is a medical & dental solution company with 3 divisions: Venus Dental Surgery, Venus Medical Surgery and Venus Medical & Dental Supplies.">
+  <meta name="keywords" content="Venus Healthcare, Venus Healthcare Zimbabwe, Harare Medical, Harare Medical Center, Harare Dental, Venus Healthcare Harare">
+  <title>Venus Healthcare</title>
+  <meta property="og:title" content="Venus Healthcare Services Home">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.venushealthcare.co.zw/">
+  <meta property="og:site_name" content="Venus Healthcare Services">
+  <meta property="og:description" content="Venus Healthcare is a medical & dental solution company with 3 divisions: Venus Dental Surgery, Venus Medical Surgery and Venus Medical & Dental Supplies.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-icon">
+    <svg class="closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <path d="M50,25H0 M50,10H0 M0,40h50" stroke="#ffffff"></path>
+    </svg>
+    <svg class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <line x1="7" x2="43" y1="43" y2="7" stroke="#000000"></line>
+      <line x1="7" x2="43" y1="7" y2="43" stroke="#000000"></line>
+    </svg>
+  </div>
+
+  <!-- Navigation -->
+  <div class="navigation-container">
+    <div class="logo-container">
+      <svg id="app-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335 360">
+        <title>Venus Health Logo</title>
+        <g id="logo-layer-1" data-name="logo-layer-1">
+          <g>
+            <path d="M42.1,61C-15.47,144.69,5,257.55,81,312.18c62.94,45.22,152.49,42.27,216.74-8.41a17.78,17.78,0,0,0,2.79-25l-16.71-20.91"></path>
+            <circle cx="58.21" cy="37.49" r="28.49"></circle>
+          </g>
+          <path d="M186.69,32.23c49.2-.4,94.62,25.93,118,68.43,27.09,49.32,15.7,104.9-9.19,140.94-24.38,35.3-58.93,47.79-68.42,50.89-8.4,2.74-53.82,16.67-101.62-7.49-9.68-4.89-41.2-22.33-59.41-60.6a131.24,131.24,0,0,1-12.59-54.55"></path>
+          <path class="logo-cross" d="M156.46,135.51H114.27a16.2,16.2,0,0,0-16.22,16.21v27.15a16.2,16.2,0,0,0,16.22,16.21h42.19V237.4a16.11,16.11,0,0,0,16.1,16.09H200A16.1,16.1,0,0,0,216.1,237.4V195.08h42.2a16.23,16.23,0,0,0,16.21-16.21V151.72a16.23,16.23,0,0,0-16.21-16.21H216.1V93.19A16.1,16.1,0,0,0,200,77.1H172.56a16.11,16.11,0,0,0-16.1,16.09Z"></path>
+        </g>
+      </svg>
+      <div class="logo-text">
+        <span class="secondary-color">Venus Healthcare</span>
+        Services
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a class="page-link" href="index.html">Home</a></li>
+        <li>
+          <a href="#services" class="dropdown-link dropdown-arrow">Services</a>
+          <ul class="sublinks">
+            <li><a class="page-link" href="medical.html">Medical General Practitioner</a></li>
+            <li><a class="page-link" href="mental.html">Mental Health Service</a></li>
+            <li><a class="page-link" href="dental.html">Dental Health Service</a></li>
+            <li><a class="page-link" href="consultation.html">Business Consultancy</a></li>
+          </ul>
+        </li>
+        <li><a class="page-link" href="#appointments">Appointments</a></li>
+        <li><a class="page-link" href="#about">About Us</a></li>
+        <li><a class="page-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero Carousel -->
+  <div class="header-carousel">
+    <div class="slide active" style="background-image: url('images/home-page/Home 1.jpg');">
+      <div class="slide-content">
+        <h1 class="slide-title">Unparalleled <br> care & expertise.</h1>
+        <p class="slide-text">With warm smiles and experience, <br> our team is resourced, devoted and <br> equipped to give you excellent service.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('images/home-page/Home 2.jpg');"></div>
+    <div class="slide" style="background-image: url('images/home-page/Home 3.jpg');"></div>
+    <div class="slide" style="background-image: url('images/home-page/Home 4.jpg');"></div>
+    <div class="carousel-arrows">
+      <button class="carousel-arrow prev" aria-label="Previous">&#10094;</button>
+      <button class="carousel-arrow next" aria-label="Next">&#10095;</button>
+    </div>
+    <div class="carousel-dots">
+      <button class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
+      <button class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
+      <button class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
+      <button class="carousel-dot" data-index="3" aria-label="Slide 4"></button>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services">
+    <img class="services-bg" src="images/services/background.jpg" alt="">
+    <div class="container">
+      <h1 class="title">Our services<br>cover 4 broad categories.</h1>
+      <div class="carousel-container">
+        <div class="services-carousel">
+          <!-- Service 1: Medical -->
+          <div class="service-slide active">
+            <div class="custom-inner-content">
+              <div class="card">
+                <div class="title-container" style="background-color: #69a83f;">
+                  <div class="icon"><img src="images/icons/medical.png" alt="Medical"></div>
+                  <h2 class="card-title" style="color: #69a83f;">Medical General Practitioner</h2>
+                  <div class="filler"></div>
+                </div>
+                <div class="list-wrapper">
+                  <ul class="service-list">
+                    <li>Diagnosis &amp; Treatment</li>
+                    <li>Family &amp; General Practice</li>
+                    <li>Early Intervention</li>
+                    <li>Management of Acute &amp; Chronic conditions</li>
+                    <li>Referrals to Specialist Health Professionals</li>
+                    <li>Medical &amp; Health Check-ups</li>
+                    <li>Health &amp; Nutrition Advice</li>
+                  </ul>
+                </div>
+                <div class="button-container">
+                  <a href="#appointments" class="button btn-primary" style="background-color: #69a83f;">Book Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2: Mental Health -->
+          <div class="service-slide">
+            <div class="custom-inner-content">
+              <div class="card">
+                <div class="title-container" style="background-color: #ffda17;">
+                  <div class="icon"><img src="images/icons/mental.png" alt="Mental Health"></div>
+                  <h2 class="card-title" style="color: #ffda17;">Mental Health Services</h2>
+                  <div class="filler"></div>
+                </div>
+                <div class="list-wrapper">
+                  <ul class="service-list">
+                    <li>Assessment</li>
+                    <li>Diagnosis</li>
+                    <li>Treatment</li>
+                    <li>Counselling</li>
+                  </ul>
+                </div>
+                <div class="button-container">
+                  <a href="#appointments" class="button btn-primary" style="background-color: #ffda17;">Book Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service 3: Business Consultancy -->
+          <div class="service-slide">
+            <div class="custom-inner-content">
+              <div class="card">
+                <div class="title-container" style="background-color: #f04b05;">
+                  <div class="icon"><img src="images/icons/business.png" alt="Business Consultancy"></div>
+                  <h2 class="card-title" style="color: #f04b05;">Dental &amp; Medical Business Consultancy</h2>
+                  <div class="filler"></div>
+                </div>
+                <div class="list-wrapper">
+                  <ul class="service-list">
+                    <li>Equipment Supply &amp; Fix</li>
+                    <li>Setup of Dental Practice</li>
+                    <li>Supervision of Dental Professionals</li>
+                    <li>Business Combinations</li>
+                    <li>Organisation Wellness Program</li>
+                  </ul>
+                </div>
+                <div class="button-container">
+                  <a href="#appointments" class="button btn-primary" style="background-color: #f04b05;">Book Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Service 4: Dental -->
+          <div class="service-slide">
+            <div class="custom-inner-content">
+              <div class="card">
+                <div class="title-container" style="background-color: #0d9beb;">
+                  <div class="icon"><img src="images/icons/dental.png" alt="Dental"></div>
+                  <h2 class="card-title" style="color: #0d9beb;">Dental Health Service</h2>
+                  <div class="filler"></div>
+                </div>
+                <div class="list-wrapper">
+                  <ul class="service-list">
+                    <li>General</li>
+                    <li>Endodontics</li>
+                    <li>Cosmetic &amp; Restorative</li>
+                    <li>Paediatric</li>
+                    <li>Oral Surgery</li>
+                    <li>Periodontal</li>
+                    <li>Prosthodontics &amp; Prosthetic</li>
+                    <li>Dental Hygiene</li>
+                  </ul>
+                </div>
+                <div class="button-container">
+                  <a href="#appointments" class="button btn-primary" style="background-color: #0d9beb;">Book Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <div class="carousel-arrows">
+            <button class="carousel-arrow prev" aria-label="Previous">&#10094;</button>
+            <button class="carousel-arrow next" aria-label="Next">&#10095;</button>
+          </div>
+          <div class="carousel-dots">
+            <button class="carousel-dot active" data-index="0" aria-label="Service 1"></button>
+            <button class="carousel-dot" data-index="1" aria-label="Service 2"></button>
+            <button class="carousel-dot" data-index="2" aria-label="Service 3"></button>
+            <button class="carousel-dot" data-index="3" aria-label="Service 4"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h1 class="title text-5xl">What our clients say</h1>
+      <div class="grid md:grid-cols-2 md:gap-24 lg:gap-64 sm:grid-cols-1">
+        <div class="card-container">
+          <p class="summary my-12 md:my-12 md:px-12">I must say I was impressed too by the Venus Medical and Dental Surgery team, took my daughter and the process went so smooth despite the fact that she was having two teeth removed. Thank you Dr Tsungu. And yes the beautiful ladies by the reception, they even called a few days later to check on her.</p>
+          <div class="quotation-mark mb-6 md:mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 200 170" role="presentation" aria-hidden="true">
+              <g>
+                <path d="M78.2 19.8L85.7 33c.8 1.4 1.7 2.9 2.7 4.5-3.9 2.3-7.7 4.7-11.5 6.9-12.7 7.3-24.2 16.2-33.4 27.8-8.9 11.2-13 24.1-14.3 38.5 4.4 0 8.6-.4 12.8.1 6.8.7 13.9 1.1 20.3 3.3 13.1 4.4 19.5 14.3 20.7 27.9.6 7.4-.5 14.4-4.2 20.9-7.8 13.6-20.5 19.7-37.3 17.5-21.8-2.6-33.5-13.5-38.7-36.3-1.2-5.3-1.9-10.7-2.8-16v-15.4c.2-.6.5-1.2.6-1.9 1-10 4-19.3 8.8-28.1 11.1-20.4 27-36.3 46.3-48.9 7.2-4.7 14.5-9.4 21.8-14.1.2.1.4.1.7.1z"></path>
+                <path d="M189.4 19.8c3.5 5.8 6.9 11.6 10.6 17.8-1.7 1-3.4 2.1-5.1 3-13.4 7.8-26.3 16.1-36.8 27.9-10.7 12-15.9 26-17.4 42.3 1.4 0 2.8-.1 4.2 0 8.3.6 16.8.2 24.8 2.1 18.9 4.4 26.1 18.9 24.8 36.6-1.3 16.9-15.3 30.5-31.9 31.3-12.2.6-23.9-1.1-33.5-9.5-8.7-7.6-12.6-17.9-15.1-28.8-7.2-32.2 2.1-59.7 23.9-83.6 11-12 23.8-21.8 37.6-30.3 4.5-2.8 8.8-5.8 13.3-8.8h.6z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="card-container">
+          <p class="summary my-12 md:my-12 md:px-12">You guys are nothing short of AMAZING. Your reception of patients, your accommodation of us ESPECIALLY us with kids, and of course your beautiful smiles we could feel them under the masks and through your eyes.</p>
+          <div class="quotation-mark mb-6 md:mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 20 200 170" role="presentation" aria-hidden="true">
+              <g>
+                <path d="M78.2 19.8L85.7 33c.8 1.4 1.7 2.9 2.7 4.5-3.9 2.3-7.7 4.7-11.5 6.9-12.7 7.3-24.2 16.2-33.4 27.8-8.9 11.2-13 24.1-14.3 38.5 4.4 0 8.6-.4 12.8.1 6.8.7 13.9 1.1 20.3 3.3 13.1 4.4 19.5 14.3 20.7 27.9.6 7.4-.5 14.4-4.2 20.9-7.8 13.6-20.5 19.7-37.3 17.5-21.8-2.6-33.5-13.5-38.7-36.3-1.2-5.3-1.9-10.7-2.8-16v-15.4c.2-.6.5-1.2.6-1.9 1-10 4-19.3 8.8-28.1 11.1-20.4 27-36.3 46.3-48.9 7.2-4.7 14.5-9.4 21.8-14.1.2.1.4.1.7.1z"></path>
+                <path d="M189.4 19.8c3.5 5.8 6.9 11.6 10.6 17.8-1.7 1-3.4 2.1-5.1 3-13.4 7.8-26.3 16.1-36.8 27.9-10.7 12-15.9 26-17.4 42.3 1.4 0 2.8-.1 4.2 0 8.3.6 16.8.2 24.8 2.1 18.9 4.4 26.1 18.9 24.8 36.6-1.3 16.9-15.3 30.5-31.9 31.3-12.2.6-23.9-1.1-33.5-9.5-8.7-7.6-12.6-17.9-15.1-28.8-7.2-32.2 2.1-59.7 23.9-83.6 11-12 23.8-21.8 37.6-30.3 4.5-2.8 8.8-5.8 13.3-8.8h.6z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Section -->
+  <section id="appointments">
+    <img class="appointments-bg" src="images/appointments/background.jpg" alt="">
+    <div class="container title-container">
+      <h1 class="title text-left">Book<br>your next appointment.</h1>
+    </div>
+    <form id="appointmentForm" method="post" name="appointmentForm" action="forms/appointment.php" class="appointment-form text-left">
+      <div class="container">
+        <div class="flex flex-wrap mb-5">
+          <label class="w-full md:w-2/3 p-4">
+            <span class="input-label text-white">Name</span>
+            <span class="required-flag">*</span>
+            <input name="name" type="text" class="mt-1 block w-full rounded-md" required>
+          </label>
+          <label class="w-full md:w-1/3 p-4">
+            <span class="input-label text-white">Service</span>
+            <span class="required-flag">*</span>
+            <select name="service" class="block w-full mt-1 rounded-md" required>
+              <option value="" disabled selected hidden>Pick a Service</option>
+              <option value="Dental">Dental Service</option>
+              <option value="Medical">Medical Service</option>
+              <option value="Mental Health">Mental Health Service</option>
+              <option value="Business Consultancy">Business Consultancy Service</option>
+              <option value="Vaccination">Vaccination</option>
+            </select>
+          </label>
+        </div>
+        <div class="flex flex-wrap mb-5">
+          <label class="w-full md:w-1/3 p-4">
+            <span class="input-label text-white">Email Address</span>
+            <input name="email" type="email" class="mt-1 block w-full rounded-md">
+          </label>
+          <label class="w-full md:w-1/3 p-4">
+            <span class="input-label text-white">Phone</span>
+            <span class="required-flag">*</span>
+            <input name="phone" type="tel" class="mt-1 block w-full rounded-md" required>
+          </label>
+          <label class="w-full md:w-1/3 p-4">
+            <span class="input-label text-white">Appointment Date</span>
+            <span class="required-flag">*</span>
+            <input name="date" type="date" class="mt-1 block w-full rounded-md" required>
+          </label>
+        </div>
+        <div class="button-container text-center">
+          <button type="submit" class="button btn-primary">Book Appointment</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- About Us / Team Section -->
+  <section id="about">
+    <div class="title-container">
+      <h1 class="title">About Us</h1>
+    </div>
+    <div class="container">
+      <div class="grid md:grid-cols-3 md:gap-x-32 md:gap-y-24 sm:grid-cols-1">
+        <div class="avatar-container">
+          <img src="images/about/Dr Tsungu.jpg" alt="Image of Dr Tsungu">
+          <p class="summary-panel text-center">Dr Tsungu, the director is a general dental practitioner with over 10 years experience. He has a special interest in Orthodontics &amp; Implantology. He holds a Bachelor of Dental Surgery from the University of Zimbabwe &amp; has a certificate in orthodontics with McGann Postgraduate School of Dentistry in the United States of America. Dr Tsungu also acquired a certificate in Dental Implantology at University of Pretoria.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Dr Tsungu</h3>
+                <div class="job-title">Director</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://www.linkedin.com/in/dr-knowledge-tsungu-43646682" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="avatar-container">
+          <img src="images/about/Dr Mwamuka.jpg" alt="Image of Dr Mwamuka">
+          <p class="summary-panel text-center">Dr Mwamuka is a director &amp; Specialist Psychiatrist. She holds a Bachelor of Medicine &amp; Bachelor of Surgery degree (MBCHB) from the University of Zimbabwe &amp; a Diploma in HIV Management with College of Medicine S.A. She also holds a Diploma &amp; Masters in Mental Health from the UZ. She has vast clinical &amp; leadership experience from working at private practices, Sally Mugabe &amp; Parirenyatwa Psychiatry.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Dr Mwamuka</h3>
+                <div class="job-title">Director</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://www.linkedin.com/in/rukudzo-mwamuka-321389109" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="avatar-container">
+          <img src="images/about/B Chitiyo.jpg" alt="Image of Barnabas Chitiyo">
+          <p class="summary-panel text-center">Barnabas holds a Bachelor of Accountancy Honours Degree with the University of Zimbabwe. He has experience in the audit &amp; accounting industry and is interested in financial intelligence, accounting and financial softwares &amp; packages among others.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Barnabas Chitiyo</h3>
+                <div class="job-title">Finance &amp; Admin Manager</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://www.linkedin.com/in/barnabas-chitiyo-586a17140" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="avatar-container">
+          <img src="images/about/R Chinaka.jpg" alt="Image of Ruvimbo Chinaka">
+          <p class="summary-panel text-center">Ruvimbo is an accountant with a Bachelor in Accountancy Honours Degree from University of Zimbabwe. She has extensive experience &amp; management skills having worked in accounting, finance &amp; administration roles; starting with cashier, accounts clerk &amp; admin assistant roles.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Ruvimbo Chinaka</h3>
+                <div class="job-title">Accountant</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://www.linkedin.com/in/ruvimbo-chinaka-670a86172" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="avatar-container">
+          <img src="images/about/V Musasa.jpg" alt="Image of Vimbai Musasa">
+          <p class="summary-panel text-center">Vimbai is a well experienced Dental Assistant who joined the Venus Healthcare Services Team in 2014. The patient experience is her priority, and she works hard to ensure they feel comfortable in our office. Acts with integrity and in the best interests of patients for delivery of effective support.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Vimbai Musasa</h3>
+                <div class="job-title">Dental Assistant</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://linkedin.com" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="avatar-container">
+          <img src="images/about/C Marozwa.jpg" alt="Image of Caroline Marozwa">
+          <p class="summary-panel text-center">Caroline is a highly trained registered dental assistant. She has experience in both general and specialized treatments. She is well practiced in the delivery of the best possible care and assistance to patients to encourage individual developments.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Caroline Marozwa</h3>
+                <div class="job-title">Dental Assistant</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://linkedin.com" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="avatar-container">
+          <img src="images/about/E Gwatidzo.jpg" alt="Image of Ellaine Gwatidzo">
+          <p class="summary-panel text-center">Ellaine is a qualified and accomplished registered medical nurse with experience within community nursing, residential homes and hospital environments &ndash; providing a wide range of medical functions and is responsible for correct administration of drugs and treatments.</p>
+          <div class="details-panel text-white">
+            <div class="col-span-4 v-align text-left">
+              <div class="sub-text">
+                <h3 class="title">Ellaine Gwatidzo</h3>
+                <div class="job-title">Registered General Nurse</div>
+              </div>
+            </div>
+            <div class="v-align" style="justify-content: center;">
+              <a href="https://linkedin.com" target="_blank" class="linkedin-icon">
+                <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px"><path d="M25,2C12.3,2,2,12.3,2,25s10.3,23,23,23s23-10.3,23-23S37.7,2,25,2z M19,35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20 c0-0.5,0.5-1,1-1h4c0.5,0,1,0.5,1,1V35z M16,18c-1.6,0-3-1.4-3-3s1.4-3,3-3s3,1.4,3,3S17.6,18,16,18z M38,35c0,0.5-0.5,1-1,1h-4 c-0.5,0-1-0.5-1-1v-7.5c0-1.4-1.1-2.5-2.5-2.5S27,26.1,27,27.5V35c0,0.5-0.5,1-1,1h-4c-0.5,0-1-0.5-1-1V20c0-0.5,0.5-1,1-1h4 c0.5,0,1,0.4,1,1c1.1-0.6,2.2-1,3.5-1c4.1,0,7.5,3.4,7.5,7.5V35z"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="container">
+    <img class="faq-bg" src="images/background.jpg" alt="">
+    <div class="title-container">
+      <h1 class="title">Frequently Asked Questions.</h1>
+    </div>
+    <div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Do I need an appointment or they can just walk in?</p></div>
+        <div class="answer-container"><p>Yes! You do require an appointment.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>How do I schedule an appointment?</p></div>
+        <div class="answer-container"><p>You can call or send us a message on our WhatsApp numbers: <br> +263 719 341 917 &ndash; For medical appointments <br> +263 777 289 797 &ndash; For Dental Appointments <br> +263 242 339 280 &ndash; Our Landline Number</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Can I make same day appointments?</p></div>
+        <div class="answer-container"><p>Yes. We keep appointments open each day for same day emergency appointments however these can get filled. Therefore, for your convenience, please phone ahead and book appointments in advance.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>What should I bring?</p></div>
+        <div class="answer-container"><p>Your ID, Medical Aid card, previous medical records and referral letter where applicable.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Do you accept my Medical Aid?</p></div>
+        <div class="answer-container"><p>Yes! But conditions do apply on certain medical aids; please call or message us for more details.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>What time do you close?</p></div>
+        <div class="answer-container"><p>During week days, we are open from 08: 00 until 16:30. On Saturdays, we close at 13: 00. We are closed on Sundays and all public holidays.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Where are you located?</p></div>
+        <div class="answer-container"><p>We are at Number 4 Cuba Avenue, Mt Pleasant in Harare, Zimbabwe. Please visit our <a href="#contact">Contact Us page</a> for the map and contact details.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Do you offer online mental health services?</p></div>
+        <div class="answer-container"><p>Yes, we offer telephone consultations for medical and mental health services. Call or send a message on <a href="tel:+263777289797">+263 777 289 797</a>, to get more information on how to make a booking.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>At what age can a child have their first dental visit?</p></div>
+        <div class="answer-container"><p>When your child has their first tooth, it's time to visit the dentist.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>How often should I get a dental checkup?</p></div>
+        <div class="answer-container"><p>Every 6 months.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Do you provide vaccinations?</p></div>
+        <div class="answer-container"><p>Yes! We provide a variety of travel vaccinations.</p></div>
+      </div>
+      <div class="question-item-container text-left">
+        <div class="toggle-button">
+          <span class="open-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 103.58"><g><rect x="46.08" width="15" height="103.58" rx="5.71"></rect><rect x="46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 103.58, 0)"></rect></g></svg></span>
+          <span class="close-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.58 11.42"><g><rect x="46.08" y="-46.08" width="15" height="103.58" rx="5.71" transform="matrix(0, 1, -1, 0, 57.5, -46.08)"></rect></g></svg></span>
+        </div>
+        <div class="question-container"><p>Which vaccinations can I get at your center?</p></div>
+        <div class="answer-container"><p>We offer all travel vaccinations as well as the COVID vaccine.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="title-container container flex flex-wrap">
+      <h1 class="title text-left w-full md:w-1/2">Contact Us</h1>
+      <div class="social-media-icons flex w-full md:w-1/2">
+        <a class="media-icon whatsapp" href="https://wa.me/+263719341917"><img src="images/icons/whatsapp.svg" alt="WhatsApp"></a>
+        <a class="media-icon whatsapp" href="https://wa.me/+263777289797"><img src="images/icons/whatsapp.svg" alt="WhatsApp"></a>
+        <a class="media-icon facebook" href="https://www.facebook.com/pg/venusmedicalanddentalsurgery/posts/"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+        <a class="media-icon twitter" href="https://twitter.com/venus_surgery?lang=en"><img src="images/icons/twitter.png" alt="Twitter"></a>
+        <a class="media-icon instagram" href="https://www.instagram.com/venusmedicalanddentalsurgery/"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+    <div class="map-container">
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3798.7391838602857!2d31.0353074!3d-17.8039508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a50b3749319d%3A0xde0d867336bc53ed!2sVenus%20Dental%20%26%20Medical%20Surgery!5e0!3m2!1sen!2szw!4v1636477628759!5m2!1sen!2szw" allowfullscreen="" scrolling="no" loading="lazy"></iframe>
+    </div>
+    <form id="contactForm" method="post" class="appointment-form text-left">
+      <div class="container flex flex-wrap mb-10">
+        <div class="w-full md:w-1/2 p-4">
+          <label>
+            <span class="input-label text-white">Name</span>
+            <span class="required-flag">*</span>
+            <input type="text" name="name" class="mt-1 block w-full rounded-md" required>
+          </label>
+          <label>
+            <span class="input-label text-white">Email Address</span>
+            <input type="email" name="email" class="mt-1 block w-full rounded-md">
+          </label>
+          <label>
+            <span class="input-label text-white">Phone Number</span>
+            <span class="required-flag">*</span>
+            <input type="tel" name="phone" class="mt-1 block w-full rounded-md">
+          </label>
+        </div>
+        <div class="w-full md:w-1/2 p-4">
+          <label>
+            <span class="input-label text-white">Message</span>
+            <span class="required-flag">*</span>
+            <textarea name="message" rows="5" class="mt-1 block w-full rounded-md"></textarea>
+          </label>
+          <div class="button-container text-center">
+            <button type="submit" class="button btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-left flex space-x-12 mb-10">
+    <div class="container flex flex-wrap">
+      <div class="w-full md:w-1/2 p-4 flex flex-col">
+        <div class="flex">
+          <div class="icon" style="width: 25%;"><img src="images/icons/email-icon.png" alt="Email"></div>
+          <div style="width: 75%;" class="mb-6">
+            <div><a href="mailto:dental@venushealthcare.co.zw">dental@venushealthcare.co.zw</a></div>
+            <div><a href="mailto:medical@venushealthcare.co.zw">medical@venushealthcare.co.zw</a></div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="icon" style="width: 25%;"><img src="images/icons/phone-icon.png" alt="Phone"></div>
+          <div style="width: 75%;">
+            <div><a href="tel:0242339769">+263(0242) 339 769</a></div>
+            <div><a href="tel:+263777289797">+263 777 289 797</a></div>
+            <div><a href="tel:+263774890158">+263 774 890 158</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 p-4 flex open-times-container">
+        <div class="icon" style="width: 25%;"><img src="images/icons/time-icon.png" alt="Hours"></div>
+        <div style="width: 75%;">
+          <div>Open Monday to Friday from 8:00 - 16:30</div>
+          <div>Saturday from 8:00 - 13:00</div>
+          <div class="mt-8">Closed on Sundays &amp; Public Holidays</div>
+        </div>
+      </div>
+      <div class="copyright container text-left w-full flex flex-wrap mb-10 pt-4 pb-4">
+        <div class="w-full md:w-1/2 copyright-statement">Copyright &copy; Venus Healthcare Services. All rights reserved.</div>
+        <div class="w-full md:w-1/2 signature-image"><img src="images/signature.png" alt="Signature"></div>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

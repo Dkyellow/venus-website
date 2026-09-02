@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Medical General Practitioner",
+    "icon": "medical.png",
+    "color": "#69a83f",
+    "list": [
+      "Diagnosis & Treatment",
+      "Family & General Practice",
+      "Early Intervention",
+      "Management of Acute & Chronic conditions",
+      "Referrals to Specialist Health Professionals",
+      "Medical & Health Check-ups",
+      "Health & Nutrition Advice"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Mental Health Services",
+    "icon": "mental.png",
+    "color": "#ffda17",
+    "list": [
+      "Assessment",
+      "Diagnosis",
+      "Treatment",
+      "Counselling"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Dental & Medical Business Consultancy",
+    "icon": "business.png",
+    "color": "#f04b05",
+    "list": [
+      "Equipment Supply & Fix",
+      "Setup of Dental Practice",
+      "Supervision of Dental Professionals",
+      "Business Combinations",
+      "Organisation Wellness Program"
+    ],
+    "link": ""
+  },
+  {
+    "title": "Dental Health Service",
+    "icon": "dental.png",
+    "color": "#0d9beb",
+    "list": [
+      "General",
+      "Endodontics",
+      "Cosmetic & Restorative",
+      "Paediatric",
+      "Oral Surgery",
+      "Periodontal",
+      "Prosthodontics & Prosthetic",
+      "Dental Hygiene"
+    ],
+    "link": ""
+  }
+]

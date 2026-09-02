@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Dr Tsungu",
+    "job": "Director",
+    "image": "Dr Tsungu.jpg",
+    "summary": "Dr Tsungu, the director is a general dental practitioner with over 10 years experience. He has a special interest in Orthodontics & Implantology. He holds a Bachelor of Dental Surgery from the University of Zimbabwe & has a certificate in orthodontics with McGann Postgraduate School of Dentistry in the United States of America. Dr Tsungu also acquired a certificate in Dental Implantology at University of Pretoria.",
+    "linkedIn": "https://www.linkedin.com/in/dr-knowledge-tsungu-43646682"
+  },
+  {
+    "name": "Dr Mwamuka",
+    "job": "Director",
+    "image": "Dr Mwamuka.jpg",
+    "summary": "Dr Mwamuka is a director & Specialist Psychiatrist. She holds a Bachelor of Medicine & Bachelor of Surgery degree (MBCHB) from the University of Zimbabwe & a Diploma in HIV Management with College of Medicine S.A. She also holds a Diploma & Masters in Mental Health from the UZ. She has vast clinical & leadership experience from working at private practices, Sally Mugabe & Parirenyatwa Psychiatry.",
+    "linkedIn": "https://www.linkedin.com/in/rukudzo-mwamuka-321389109"
+  },
+  {
+    "name": "Barnabas Chitiyo",
+    "job": "Finance & Admin Manager",
+    "image": "B Chitiyo.jpg",
+    "summary": "Barnabas holds a Bachelor of Accountancy Honours Degree with the University of Zimbabwe. He has experience in the audit & accounting industry and is interested in financial intelligence, accounting and financial softwares & packages among others.",
+    "linkedIn": "https://www.linkedin.com/in/barnabas-chitiyo-586a17140"
+  },
+  {
+    "name": "Ruvimbo Chinaka",
+    "job": "Accountant",
+    "image": "R Chinaka.jpg",
+    "summary": "Ruvimbo is an accountant with a Bachelor in Accountancy Honours Degree from University of Zimbabwe. She has extensive experience & management skills having worked in accounting, finance & administration roles; starting with cashier, accounts clerk & admin assistant roles.",
+    "linkedIn": "https://www.linkedin.com/in/ruvimbo-chinaka-670a86172"
+  },
+  {
+    "name": "Vimbai Musasa",
+    "job": "Dental Assistant",
+    "image": "V Musasa.jpg",
+    "summary": "Vimbai is a well experienced Dental Assistant who joined the Venus Healthcare Services Team in 2014. The patient experience is her priority, and she works hard to ensure they feel comfortable in our office. Acts with integrity and in the best interests of patients for delivery of effective support.",
+    "linkedIn": "https://linkedin.com"
+  },
+  {
+    "name": "Caroline Marozwa",
+    "job": "Dental Assistant",
+    "image": "C Marozwa.jpg",
+    "summary": "Caroline is a highly trained registered dental assistant. She has experience in both general and specialized treatments. She is well practiced in the delivery of the best possible care and assistance to patients to encourage individual developments.",
+    "linkedIn": "https://linkedin.com"
+  },
+  {
+    "name": "Ellaine Gwatidzo",
+    "job": "Registered General Nurse",
+    "image": "E Gwatidzo.jpg",
+    "summary": "Ellaine is a qualified and accomplished registered medical nurse with experience within community nursing, residential homes and hospital environments – providing a wide range of medical functions and is responsible for correct administration of drugs and treatments.",
+    "linkedIn": "https://linkedin.com"
+  }
+]

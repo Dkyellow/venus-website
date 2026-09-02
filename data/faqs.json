@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Do I need an appointment or they can just walk in?",
+    "answer": "Yes! You do require an appointment."
+  },
+  {
+    "question": "How do I schedule an appointment?",
+    "answer": "You can call or send us a message on our WhatsApp numbers: <br> +263 719 341 917 – For medical appointments <br> +263 777 289 797 – For Dental Appointments <br> +263 242 339 280 – Our Landline Number"
+  },
+  {
+    "question": "Can I make same day appointments?",
+    "answer": "Yes. We keep appointments open each day for same day emergency appointments however these can get filled. Therefore, for your convenience, please phone ahead and book appointments in advance."
+  },
+  {
+    "question": "What should I bring?",
+    "answer": "Your ID, Medical Aid card, previous medical records and referral letter where applicable."
+  },
+  {
+    "question": "Do you accept my Medical Aid?",
+    "answer": "Yes! But conditions do apply on certain medical aids; please call or message us for more details."
+  },
+  {
+    "question": "What time do you close?",
+    "answer": "During week days, we are open from 08: 00 until 16:30. On Saturdays, we close at 13: 00. We are closed on Sundays and all public holidays."
+  },
+  {
+    "question": "Where are you located?",
+    "answer": "We are at Number 4 Cuba Avenue, Mt Pleasant in Harare, Zimbabwe. Please visit our <a href=\"#contact\">Contact Us page</a> for the map and contact details. "
+  },
+  {
+    "question": "Do you offer online mental health services?",
+    "answer": "Yes, we offer telephone consultations for medical and mental health services. Call or send a message on <a href=\"tel:+263777289797\">+263 777 289 797</a>, to get more information on how to make a booking."
+  },
+  {
+    "question": "At what age can a child have their first dental visit?",
+    "answer": "When your child has their first tooth, it’s time to visit the dentist."
+  },
+  {
+    "question": "How often should I get a dental checkup?",
+    "answer": "Every 6 months."
+  },
+  {
+    "question": "Do you provide vaccinations?",
+    "answer": "Yes! We provide a variety of travel vaccinations."
+  },
+  {
+    "question": "Which vaccinations can I get at your center?",
+    "answer": "We offer all travel vaccinations as well as the COVID vaccine."
+  }
+]
