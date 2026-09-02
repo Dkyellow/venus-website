@@ -373,7 +373,6 @@ svg path.logo-cross {
 
 /* === FOOTER === */
 footer {
-  background: white;
   margin-bottom: 0;
 }
 
@@ -408,7 +407,7 @@ footer .signature-image img,
 
 .copyright {
   border-top: 3px solid #cccccc;
-  background: white;
+}
   margin-bottom: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -814,7 +813,6 @@ footer .signature-image img,
 /* === TESTIMONIALS === */
 .testimonials-section {
   padding: 50px 0;
-  background: white;
 }
 
 .testimonials-section .title {
@@ -1215,7 +1213,6 @@ footer .signature-image img,
   height: 100%;
   margin-top: 82px;
   padding-top: 30px;
-  background: white;
 }
 
 #contact .title-container .title {
