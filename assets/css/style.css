@@ -852,7 +852,7 @@ footer .signature-image img,
 }
 
 .card-container .quotation-mark svg g path {
-  fill: #ff6161;
+  fill: #6aaa47;
 }
 
 /* === APPOINTMENTS SECTION === */
@@ -962,18 +962,33 @@ footer .signature-image img,
 
 /* === TEAM / ABOUT SECTION === */
 #about {
-  padding: 50px 0;
+  padding: 120px 0 50px;
   position: relative;
   isolation: isolate;
   background: url(../../images/background.jpg) center center / cover fixed no-repeat;
 }
 
-#about .title {
+#about h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 59px;
+  text-align: center;
   color: #fff;
  
+}
+#about .title h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+ 
+}
+
+@media screen and (max-width: 480px) {
+  #about .title {
+    font-size: 35px;
+  }
 }
 
 .v-align {
