@@ -1077,10 +1077,11 @@ footer .signature-image img,
 }
 
 /* === FAQ SECTION === */
-#faq {
+#faq.container {
   padding: 50px 40px;
   position: relative;
   isolation: isolate;
+  max-width: none;
   background: url(../../images/background.jpg) center center / cover fixed no-repeat;
 }
 
