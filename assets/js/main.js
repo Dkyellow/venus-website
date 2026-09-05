@@ -218,60 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ============================================
-    // APPOINTMENT FORM HANDLING
-    // ============================================
-    var appointmentForm = document.getElementById('appointmentForm');
-    if (appointmentForm) {
-        appointmentForm.addEventListener('submit', async function (event) {
-            event.preventDefault();
-
-            var submitBtn = appointmentForm.querySelector('button[type="submit"]');
-            var originalText = submitBtn.textContent;
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="spinner"></span>';
-
-            var formData = new FormData(appointmentForm);
-
-            try {
-                var response = await fetch('forms/appointment.php', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                var result = await response.json();
-
-                var statusEl = appointmentForm.querySelector('.form-status');
-                if (!statusEl) {
-                    statusEl = document.createElement('div');
-                    statusEl.className = 'form-status';
-                    appointmentForm.querySelector('.container').appendChild(statusEl);
-                }
-
-                if (result.success) {
-                    statusEl.className = 'form-status success show';
-                    statusEl.textContent = result.message || 'Appointment booked successfully!';
-                    appointmentForm.reset();
-                } else {
-                    statusEl.className = 'form-status error show';
-                    statusEl.textContent = result.message || 'Something went wrong. Please try again.';
-                }
-            } catch (error) {
-                var statusEl = appointmentForm.querySelector('.form-status');
-                if (!statusEl) {
-                    statusEl = document.createElement('div');
-                    statusEl.className = 'form-status';
-                    appointmentForm.querySelector('.container').appendChild(statusEl);
-                }
-                statusEl.className = 'form-status error show';
-                statusEl.textContent = 'Network error. Please check your connection and try again.';
-            }
-
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
-        });
-    }
-
-    // ============================================
     // ACTIVE NAVIGATION STATE
     // ============================================
     var currentPage = window.location.pathname.split('/').pop() || 'index.html';

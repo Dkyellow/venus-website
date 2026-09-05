@@ -258,48 +258,10 @@
     <div class="container title-container">
       <h1 class="title text-left">Book<br>your next appointment.</h1>
     </div>
-    <form id="appointmentForm" method="post" name="appointmentForm" action="forms/appointment.php" class="appointment-form text-left">
-      <div class="container">
-        <div class="flex flex-wrap mb-5">
-          <label class="w-full md:w-2/3 p-4">
-            <span class="input-label text-white">Name</span>
-            <span class="required-flag">*</span>
-            <input name="name" type="text" class="mt-1 block w-full rounded-md" required>
-          </label>
-          <label class="w-full md:w-1/3 p-4">
-            <span class="input-label text-white">Service</span>
-            <span class="required-flag">*</span>
-            <select name="service" class="block w-full mt-1 rounded-md" required>
-              <option value="" disabled selected hidden>Pick a Service</option>
-              <option value="Dental">Dental Service</option>
-              <option value="Medical">Medical Service</option>
-              <option value="Mental Health">Mental Health Service</option>
-              <option value="Business Consultancy">Business Consultancy Service</option>
-              <option value="Vaccination">Vaccination</option>
-            </select>
-          </label>
-        </div>
-        <div class="flex flex-wrap mb-5">
-          <label class="w-full md:w-1/3 p-4">
-            <span class="input-label text-white">Email Address</span>
-            <input name="email" type="email" class="mt-1 block w-full rounded-md">
-          </label>
-          <label class="w-full md:w-1/3 p-4">
-            <span class="input-label text-white">Phone</span>
-            <span class="required-flag">*</span>
-            <input name="phone" type="tel" class="mt-1 block w-full rounded-md" required>
-          </label>
-          <label class="w-full md:w-1/3 p-4">
-            <span class="input-label text-white">Appointment Date</span>
-            <span class="required-flag">*</span>
-            <input name="date" type="date" class="mt-1 block w-full rounded-md" required>
-          </label>
-        </div>
-        <div class="button-container text-center">
-          <button type="submit" class="button btn-primary">Book Appointment</button>
-        </div>
-      </div>
-    </form>
+    <div class="vb-wrapper">
+      <div id="vb-message" class="vb-message" style="display:none;"></div>
+      <div id="vb-wizard"></div>
+    </div>
   </section>
 
   <!-- About Us / Team Section -->
@@ -558,5 +520,6 @@
 
   <a class="whatsapp-fab" href="https://wa.me/+263719341917" target="_blank" aria-label="Chat with Venus Healthcare on WhatsApp"><i class="bi bi-whatsapp"></i></a>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/booking.js"></script>
 </body>
 </html>
