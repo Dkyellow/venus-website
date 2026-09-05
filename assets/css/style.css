@@ -862,7 +862,6 @@ footer .signature-image img,
 /* === APPOINTMENTS SECTION === */
 #appointments {
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 950px;
