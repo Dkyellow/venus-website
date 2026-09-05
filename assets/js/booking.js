@@ -144,7 +144,10 @@ var VenusBooking = {
         startDow = startDow === 0 ? 6 : startDow - 1;
 
         var availSet = {};
-        this.availableDates.forEach(function (d) { availSet[d] = true; });
+        this.availableDates.forEach(function (d) {
+            var dateStr = typeof d === 'string' ? d : d.date;
+            availSet[dateStr] = true;
+        });
         var today = new Date().toISOString().split('T')[0];
 
         var html = '';
