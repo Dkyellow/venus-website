@@ -260,7 +260,115 @@
     </div>
     <div class="vb-wrapper">
       <div id="vb-message" class="vb-message" style="display:none;"></div>
-      <div id="vb-wizard"></div>
+      <div class="booking-single">
+        <div class="booking-left">
+          <div class="booking-form-section">
+            <label class="bp-label">Service</label>
+            <div class="bp-select-wrap">
+              <select id="service-select" class="bp-select" onchange="VenusBooking.onServiceChange(this.value)">
+                <option value="">Choose a service...</option>
+              </select>
+              <i class="bi bi-chevron-down bp-select-arrow"></i>
+            </div>
+          </div>
+
+          <div class="booking-form-section">
+            <label class="bp-label">Practitioner</label>
+            <div class="bp-select-wrap">
+              <select id="practitioner-select" class="bp-select" onchange="VenusBooking.onPractitionerChange(this.value)">
+                <option value="">Any available practitioner</option>
+              </select>
+              <i class="bi bi-chevron-down bp-select-arrow"></i>
+            </div>
+          </div>
+
+          <div class="bp-divider"></div>
+
+          <div class="booking-pickers">
+            <div class="bp-calendar-card">
+              <label class="bp-label"><i class="bi bi-calendar3 me-1"></i> Select a day</label>
+              <div class="bp-calendar-input" id="calendar-input" onclick="VenusBooking.toggleCalendar()">
+                <span id="calendar-display">Pick a date</span>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="bp-calendar-dropdown" id="calendar-dropdown" style="display:none;">
+                <div class="bp-cal-header">
+                  <button class="bp-cal-nav" onclick="VenusBooking.prevMonth()"><i class="bi bi-chevron-left"></i></button>
+                  <span id="cal-month-year"></span>
+                  <button class="bp-cal-nav" onclick="VenusBooking.nextMonth()"><i class="bi bi-chevron-right"></i></button>
+                </div>
+                <div class="bp-cal-weekdays">
+                  <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
+                </div>
+                <div class="bp-cal-grid" id="cal-grid"></div>
+                <div class="bp-cal-footer">
+                  <button class="bp-btn-remove" onclick="VenusBooking.clearDate()">Remove</button>
+                  <button class="bp-btn-done" onclick="VenusBooking.toggleCalendar()">Done</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bp-time-card" id="time-card" style="display:none;">
+              <label class="bp-label"><i class="bi bi-clock me-1"></i> Select a time</label>
+              <div class="bp-time-amps">
+                <button class="bp-amp active" data-period="AM" onclick="VenusBooking.setPeriod('AM')">AM</button>
+                <button class="bp-amp" data-period="PM" onclick="VenusBooking.setPeriod('PM')">PM</button>
+              </div>
+              <div class="bp-time-list" id="time-list"></div>
+            </div>
+          </div>
+
+          <div class="bp-divider"></div>
+
+          <div class="booking-form-section" id="patient-form-section" style="display:none;">
+            <label class="bp-label"><i class="bi bi-person me-1"></i> Your Information</label>
+            <form id="booking-form" onsubmit="event.preventDefault();VenusBooking.submitBooking();return false;">
+              <div class="bp-form-grid">
+                <div class="bp-field"><label>First Name *</label><input type="text" name="first_name" required placeholder="e.g. Tendai"></div>
+                <div class="bp-field"><label>Last Name *</label><input type="text" name="last_name" required placeholder="e.g. Mugabe"></div>
+                <div class="bp-field"><label>Email *</label><input type="email" name="email" required placeholder="you@example.com"></div>
+                <div class="bp-field"><label>Phone *</label><input type="tel" name="phone" required placeholder="+263 77 123 4567"></div>
+                <div class="bp-field full"><label>Reason for Visit</label><input type="text" name="reason" placeholder="Brief description..."></div>
+              </div>
+              <button type="submit" class="bp-confirm-btn" id="confirm-btn" disabled>
+                <i class="bi bi-send me-1"></i>Submit Booking Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="booking-right">
+          <div class="bp-summary-card" id="summary-card">
+            <h3><i class="bi bi-receipt me-2"></i>Booking Summary</h3>
+            <div id="summary-content">
+              <p class="bp-summary-empty">Complete the form to see your booking summary.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bookingSuccessModal" class="bp-modal-overlay" style="display:none;">
+      <div class="bp-modal-card">
+        <button class="bp-modal-close" onclick="VenusBooking.closeSuccessModal()"><i class="bi bi-x"></i></button>
+        <div class="bp-modal-icon-wrap">
+          <div class="bp-modal-icon-pulse"></div>
+          <div class="bp-modal-icon">
+            <i class="bi bi-check-lg"></i>
+          </div>
+        </div>
+        <div class="bp-modal-title">Booking Request Received!</div>
+        <div class="bp-modal-desc">Your appointment request has been submitted. Our team will review it and <strong>confirm your appointment shortly</strong>.</div>
+        <div class="bp-modal-ref-box">
+          <span class="bp-modal-ref-label">Booking Reference</span>
+          <span id="modal-ref-number" class="bp-modal-ref-value"></span>
+        </div>
+        <div id="modal-booking-details" class="bp-modal-details"></div>
+        <div class="bp-modal-actions">
+          <a href="https://booking.venushealthcare.co.zw/" class="bp-modal-btn bp-modal-btn-primary"><i class="bi bi-eye me-2"></i>View Booking Details</a>
+          <button onclick="VenusBooking.closeSuccessModal()" class="bp-modal-btn bp-modal-outline"><i class="bi bi-house me-2"></i>Back to Home</button>
+        </div>
+      </div>
     </div>
   </section>
 
