@@ -401,5 +401,5 @@ var VenusBooking = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.getElementById('vb-wizard')) VenusBooking.init();
+    if (document.getElementById('service-select')) VenusBooking.init();
 });
