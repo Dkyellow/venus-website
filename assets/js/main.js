@@ -265,4 +265,63 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // ============================================
+    // TEAM CAROUSEL (auto-scroll + arrows)
+    // ============================================
+    var teamTrack = document.querySelector('.team-track');
+    if (teamTrack) {
+        var teamPrev = document.querySelector('.team-prev');
+        var teamNext = document.querySelector('.team-next');
+        var teamTimer = null;
+
+        function teamStep() {
+            var card = teamTrack.querySelector('.team-card');
+            return card ? card.offsetWidth + 24 : 320;
+        }
+
+        function teamAuto() {
+            var max = teamTrack.scrollWidth - teamTrack.clientWidth - 10;
+            if (teamTrack.scrollLeft >= max) {
+                teamTrack.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                teamTrack.scrollBy({ left: teamStep(), behavior: 'smooth' });
+            }
+        }
+
+        function startTeamAuto() {
+            stopTeamAuto();
+            teamTimer = setInterval(teamAuto, 3500);
+        }
+
+        function stopTeamAuto() {
+            if (teamTimer) {
+                clearInterval(teamTimer);
+                teamTimer = null;
+            }
+        }
+
+        if (teamPrev) {
+            teamPrev.addEventListener('click', function () {
+                stopTeamAuto();
+                teamTrack.scrollBy({ left: -teamStep(), behavior: 'smooth' });
+                startTeamAuto();
+            });
+        }
+
+        if (teamNext) {
+            teamNext.addEventListener('click', function () {
+                stopTeamAuto();
+                teamTrack.scrollBy({ left: teamStep(), behavior: 'smooth' });
+                startTeamAuto();
+            });
+        }
+
+        teamTrack.addEventListener('mouseenter', stopTeamAuto);
+        teamTrack.addEventListener('mouseleave', startTeamAuto);
+        teamTrack.addEventListener('touchstart', stopTeamAuto, { passive: true });
+        teamTrack.addEventListener('touchend', startTeamAuto);
+
+        startTeamAuto();
+    }
+
 });
