@@ -22,6 +22,33 @@
   <meta name="twitter:title" content="Venus Healthcare Services | Medical and Dental Care">
   <meta name="twitter:description" content="Trusted dental, medical, mental health and business consultancy services in Harare, Zimbabwe.">
   <meta name="twitter:image" content="https://venushealthcare.co.zw/images/home-page/Home%201.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://venushealthcare.co.zw/#clinic",
+        "name": "Venus Healthcare Services",
+        "alternateName": "Venus Medical and Dental Centre",
+        "url": "https://venushealthcare.co.zw/",
+        "logo": "https://venushealthcare.co.zw/logo.png",
+        "image": "https://venushealthcare.co.zw/images/home-page/Home%201.jpg",
+        "description": "Medical, dental, mental health and specialist healthcare services in Harare, Zimbabwe.",
+        "telephone": "+263242339769",
+        "email": "admin@venushealthcare.co.zw",
+        "address": { "@type": "PostalAddress", "streetAddress": "4 Cuba Avenue, Mt Pleasant", "addressLocality": "Harare", "addressCountry": "ZW" },
+        "geo": { "@type": "GeoCoordinates", "latitude": -17.8039508, "longitude": 31.0353074 },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "17:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+        ],
+        "sameAs": ["https://www.facebook.com/pg/venusmedicalanddentalsurgery/posts/", "https://www.instagram.com/venusmedicalanddentalcentre", "https://www.tiktok.com/@venusmedicalanddentalcentre", "https://www.linkedin.com/company/venus-healthcare-services/"]
+      },
+      { "@type": "WebSite", "@id": "https://venushealthcare.co.zw/#website", "url": "https://venushealthcare.co.zw/", "name": "Venus Healthcare Services", "publisher": { "@id": "https://venushealthcare.co.zw/#clinic" } }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -74,18 +101,20 @@
           </ul>
         </li>
         <li><a class="page-link" href="#appointments">Appointments</a></li>
-        <li><a class="page-link" href="#about">About Us</a></li>
+        <li><a class="page-link" href="about.html">About Us</a></li>
           <li><a class="page-link" href="resources.html">Resources</a></li>
         <li><a class="page-link" href="#contact">Contact Us</a></li>
       </ul>
     </nav>
   </div>
 
+  <main>
+  <h1 class="visually-hidden">Venus Healthcare Services: Medical, Dental and Mental Health Care in Harare</h1>
   <!-- Hero Carousel -->
   <div class="header-carousel">
     <div class="slide active" style="background-image: url('images/home-page/hero.jpg');">
       <div class="slide-content">
-        <h1 class="slide-title">Unparalleled <br> care & expertise.</h1>
+        <h2 class="slide-title">Unparalleled <br> care & expertise.</h2>
         <p class="slide-text">With warm smiles and experience, <br> our team is resourced, devoted and <br> equipped to give you excellent service.</p>
       </div>
     </div>
@@ -108,7 +137,7 @@
   <section id="services">
     <img class="services-bg" src="images/services/background.jpg" alt="">
     <div class="container">
-      <h1 class="title">Our Services Cover<br>a wide range of needs.</h1>
+      <h2 class="title">Our Services Cover<br>a wide range of needs.</h2>
       <div class="carousel-container">
         <div class="services-carousel">
           <!-- Service 1: Medical -->
@@ -326,7 +355,7 @@
   <!-- Testimonials Section -->
   <section class="testimonials-section">
     <div class="container">
-      <h1 class="title text-5xl">What our clients say</h1>
+      <h2 class="title text-5xl">What our clients say</h2>
       <div class="grid md:grid-cols-2 md:gap-24 lg:gap-64 sm:grid-cols-1">
         <div class="card-container">
           <p class="summary my-12 md:my-12 md:px-12">I must say I was impressed too by the Venus Medical and Dental Surgery team, took my daughter and the process went so smooth despite the fact that she was having two teeth removed. Thank you Dr Tsungu. And yes the beautiful ladies by the reception, they even called a few days later to check on her.</p>
@@ -358,7 +387,7 @@
   <section id="appointments">
     <img class="appointments-bg" src="images/appointments/background.jpg" alt="">
     <div class="container title-container">
-      <h1 class="title text-left">Book<br>your next appointment.</h1>
+      <h2 class="title text-left">Book<br>your next appointment.</h2>
     </div>
     <div class="vb-wrapper">
       <div id="vb-message" class="vb-message" style="display:none;"></div>
@@ -568,7 +597,7 @@
   <!-- Contact Section -->
   <section id="contact">
     <div class="contact-header">
-      <h1 class="title">Get in touch</h1>
+        <h2 class="title">Get in touch</h2>
       <p class="contact-intro">Have questions or ready to book? Send us a message and our team will get back to you.</p>
     </div>
     <div class="contact-container">
@@ -610,6 +639,7 @@
     </div>
   </section>
 
+  </main>
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container site-footer-grid">
@@ -626,7 +656,7 @@
       <div class="site-footer-col">
         <h3>Explore</h3>
         <ul>
-          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#appointments">Appointments</a></li>
           <li><a href="resources.html">Resources</a></li>

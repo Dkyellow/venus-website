@@ -1,8 +1,9 @@
 RewriteEngine On
 
-# Force https
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force the preferred HTTPS, non-www canonical host.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.venushealthcare\.co\.zw$ [NC]
+RewriteRule ^ https://venushealthcare.co.zw%{REQUEST_URI} [L,R=301]
 
 # If an existing asset or directory is requested go to it as it is
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
