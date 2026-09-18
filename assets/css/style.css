@@ -1239,12 +1239,69 @@ svg path.logo-cross {
   }
 }
 
-/* === ABOUT PAGE (original team grid) === */
+/* === ABOUT PAGE (banner + story + team grid) === */
 #about {
-  padding: 120px 0 50px;
+  padding: 0;
   position: relative;
-  isolation: isolate;
-  background: url(../../images/background.jpg) center center / cover fixed no-repeat;
+  background: #ffffff;
+}
+
+.about-banner {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+.about-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.about-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 42, 68, 0.88) 0%, rgba(106, 170, 71, 0.72) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+}
+
+.about-banner-title {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.about-banner-sub {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.about-story {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-story-text {
+  margin: 0 0 22px;
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.about-story-text:last-child {
+  margin-bottom: 0;
 }
 
 #about h1 {
@@ -1259,7 +1316,9 @@ svg path.logo-cross {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  padding: 0 40px;
+  padding: 0 40px 80px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
