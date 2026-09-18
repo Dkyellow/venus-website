@@ -25,26 +25,46 @@
   },
   {
     "question": "Where are you located?",
-    "answer": "We are at Number 4 Cuba Avenue, Mt Pleasant in Harare, Zimbabwe. Please visit our <a href=\"#contact\">Contact Us page</a> for the map and contact details. "
-  },
-  {
-    "question": "Do you offer online mental health services?",
-    "answer": "Yes, we offer telephone consultations for medical and mental health services. Call or send a message on <a href=\"tel:+263777289797\">+263 777 289 797</a>, to get more information on how to make a booking."
-  },
-  {
-    "question": "At what age can a child have their first dental visit?",
-    "answer": "When your child has their first tooth, it’s time to visit the dentist."
+    "answer": "We are at Number 4 Cuba Avenue, Mt Pleasant in Harare, Zimbabwe. Please visit our <a href=\"#contact\">Contact Us page</a> for the map and contact details."
   },
   {
     "question": "How often should I get a dental checkup?",
     "answer": "Every 6 months."
   },
   {
-    "question": "Do you provide vaccinations?",
-    "answer": "Yes! We provide a variety of travel vaccinations."
+    "question": "What is the difference between teeth cleaning and teeth whitening?",
+    "answer": "Teeth cleaning (also known as scaling and polishing) removes plaque, tartar, and surface stains, while teeth whitening is a cosmetic-focused dental procedure that changes tooth color for appearance. Teeth look visibly whiter."
   },
   {
-    "question": "Which vaccinations can I get at your center?",
-    "answer": "We offer all travel vaccinations as well as the COVID vaccine."
+    "question": "How soon can my child get braces?",
+    "answer": "From the age of 8 years a child can come for orthodontic consultation. After assessment, the dentist can advise the most suitable treatment plan for your child."
+  },
+  {
+    "question": "At what age can a child have their first dental visit?",
+    "answer": "When your child has their first tooth, it's time to visit the dentist."
+  },
+  {
+    "question": "Do you offer online mental health services?",
+    "answer": "Yes, we offer telephone consultations for medical and mental health services. Call or send a message on <a href=\"tel:+263777289797\">+263 777 289 797</a>, to get more information on how to make a booking."
+  },
+  {
+    "question": "What time does the GP start?",
+    "answer": "The GP starts at 10am – 4:30pm on weekdays and on Saturday he starts at 9am – 12:30pm."
+  },
+  {
+    "question": "Do you admit patients here?",
+    "answer": "We can only admit patients for observations for a few hours and refer if they need further services that we do not offer here. In case of emergencies we can stabilize patients while awaiting their transfer."
+  },
+  {
+    "question": "Do you have a laboratory at your centre?",
+    "answer": "We utilize advanced in-house laboratory testing, including blood, urine, and other analyses. The samples are then sent to our partner laboratories for processing, and the results are sent back to us."
+  },
+  {
+    "question": "What vaccinations can I get at your centre?",
+    "answer": "We offer a range of vaccines which include the Flu Vaccine, Hepatitis, Measles/Mumps/Rubella, Meningococcal, Pneumococcal, Polio, Rabies, Yellow Fever and many more."
+  },
+  {
+    "question": "Do you take Ecocash, swipe or bank transfer for services offered?",
+    "answer": "Yes we accept various payment options. You may confirm your specified payment option while making your booking."
   }
 ]
