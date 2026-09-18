@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Frequently Asked Questions about Venus Healthcare Services - appointments, payments, services, GP hours and more.">
-    <meta name="keywords" content="Venus Healthcare FAQ, questions Harare, healthcare Zimbabwe, medical appointments FAQ">
-    <link rel="canonical" href="https://venushealthcare.co.zw/faq.html">
-    <title>Frequently Asked Questions | Venus Healthcare Services</title>
-    <meta property="og:title" content="Frequently Asked Questions | Venus Healthcare Services" />
+    <meta name="description" content="Resources, FAQs and gallery for Venus Healthcare Services - appointments, payments, services and more.">
+    <meta name="keywords" content="Venus Healthcare resources, FAQ Harare, healthcare Zimbabwe, medical appointments">
+    <link rel="canonical" href="https://venushealthcare.co.zw/resources.html">
+    <title>Resources | Venus Healthcare Services</title>
+    <meta property="og:title" content="Resources | Venus Healthcare Services" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://venushealthcare.co.zw/faq.html" />
+    <meta property="og:url" content="https://venushealthcare.co.zw/resources.html" />
     <meta property="og:site_name" content="Venus Healthcare Services" />
-    <meta property="og:description" content="Find answers to common questions about Venus Healthcare Services - appointments, payments, services, GP hours and more." />
+    <meta property="og:description" content="Resources, FAQs and gallery for Venus Healthcare Services." />
     <meta property="og:image" content="https://venushealthcare.co.zw/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Frequently Asked Questions | Venus Healthcare Services" />
-    <meta name="twitter:description" content="Find answers to common questions about Venus Healthcare Services." />
+    <meta name="twitter:title" content="Resources | Venus Healthcare Services" />
+    <meta name="twitter:description" content="Resources, FAQs and gallery for Venus Healthcare Services." />
   </head>
   <body>
     <svg style="position: absolute; width: 0; height: 0;">
@@ -66,10 +66,16 @@
               <li><a class="page-link" href="mental.html">Mental Health Service</a></li>
               <li><a class="page-link" href="dental.html">Dental Health Service</a></li>
               <li><a class="page-link" href="consultation.html">Business Consultancy</a></li>
+              <li><a class="page-link" href="index.html#services">Specialist Clinic Services</a></li>
+              <li><a class="page-link" href="index.html#dermatology">Dermatology</a></li>
+              <li><a class="page-link" href="index.html#pediatrics">Pediatrics</a></li>
+              <li><a class="page-link" href="index.html#physiotherapy">Physiotherapy</a></li>
+              <li><a class="page-link" href="index.html#ultrasound">Ultrasound</a></li>
             </ul>
           </li>
           <li><a class="page-link" href="index.html#appointments">Appointments</a></li>
           <li><a class="page-link" href="about.html">About Us</a></li>
+          <li><a class="page-link" href="resources.html">Resources</a></li>
           <li><a class="page-link" href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -79,14 +85,52 @@
       <div class="about-banner">
         <img src="images/home-page/hero.jpg" alt="Venus Healthcare Services" class="about-banner-img">
         <div class="about-banner-overlay">
-          <h1 class="about-banner-title">Frequently Asked<br>Questions</h1>
+          <h1 class="about-banner-title">Resources</h1>
           <p class="about-banner-sub">Everything you need to know about our services, appointments and payments.</p>
         </div>
       </div>
 
-      <div class="container faq-page-wrap">
-        <div class="faq-page-list" id="faq-page-list"></div>
-      </div>
+      <section id="faq">
+        <div class="container faq-panel">
+          <div class="faq-left">
+            <h2 class="faq-title">Frequently Asked<br>Questions</h2>
+            <p class="faq-subtitle">Trusted medical, dental and mental healthcare for families in Harare.</p>
+          </div>
+          <div class="faq-right" id="faq-page-list"></div>
+        </div>
+      </section>
+
+      <section id="resources-gallery">
+        <div class="container">
+          <h2 class="title text-5xl">Our Gallery</h2>
+          <p class="resources-gallery-sub">A glimpse into our facilities, team and the care we provide.</p>
+          <div class="resources-gallery-grid">
+            <div class="resources-gallery-item"><img src="images/home-page/hero.jpg" alt="Venus Medical & Dental Centre exterior"></div>
+            <div class="resources-gallery-item"><img src="images/home-page/gallery (1).jpg" alt="Waiting area"></div>
+            <div class="resources-gallery-item"><img src="images/home-page/gallery (2).jpg" alt=" Reception"></div>
+            <div class="resources-gallery-item"><img src="images/home-page/gallery (5).jpg" alt="Pharmacy"></div>
+            <div class="resources-gallery-item"><img src="images/home-page/picture 11 (3).jpg" alt="Consultation room"></div>
+            <div class="resources-gallery-item"><img src="images/services/service (3).jpg" alt="Dental equipment"></div>
+            <div class="resources-gallery-item"><img src="images/services/service (4).jpg" alt="Dental chair"></div>
+            <div class="resources-gallery-item"><img src="images/services/service (2).jpg" alt="Medical procedure"></div>
+            <div class="resources-gallery-item"><img src="images/services/service (1).jpg" alt="Lab equipment"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources-newsletter">
+        <div class="container resources-newsletter-inner">
+          <div class="resources-newsletter-text">
+            <h2>Stay Connected</h2>
+            <p>Subscribe to our newsletter for health tips, clinic updates and helpful resources.</p>
+          </div>
+          <form class="resources-newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.resources-nl-thanks').style.display='block'; this.querySelector('button').style.display='none'; this.querySelector('input').style.display='none';">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="button btn-primary">Subscribe</button>
+            <p class="resources-nl-thanks" style="display:none;">Thank you for subscribing!</p>
+          </form>
+        </div>
+      </section>
     </section>
 
     <!-- Footer -->
@@ -94,10 +138,11 @@
       <div class="container site-footer-grid">
         <div class="site-footer-col site-footer-brand">
           <a href="index.html" class="site-footer-logo"><img src="logo.png" alt="Venus Healthcare Services logo"></a>
-          <p>A caring medical, dental and mental health practice in Harare, nurturing healthy smiles, minds and families.</p>
+          <p>Your one-stop healthcare hub for all your medical, dental and specialist needs.</p>
           <div class="site-footer-social">
             <a href="https://www.facebook.com/pg/venusmedicalanddentalsurgery/posts/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/venusmedicalanddentalcentre" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@venusmedicalanddentalcentre" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
             <a href="https://www.linkedin.com/company/venus-healthcare-services/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
@@ -107,7 +152,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#appointments">Appointments</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="resources.html">Resources</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>

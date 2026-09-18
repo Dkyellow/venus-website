@@ -129,6 +129,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 showService(index);
             });
         });
+
+        function showServiceFromHash() {
+            var target = window.location.hash.slice(1);
+            if (!target) return;
+
+            serviceSlides.forEach(function (slide, index) {
+                if (slide.id === target) showService(index);
+            });
+        }
+
+        showServiceFromHash();
+        window.addEventListener('hashchange', showServiceFromHash);
     }
 
     // ============================================
