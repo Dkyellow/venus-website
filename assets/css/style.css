@@ -1239,6 +1239,173 @@ svg path.logo-cross {
   }
 }
 
+/* === ABOUT PAGE (original team grid) === */
+#about {
+  padding: 120px 0 50px;
+  position: relative;
+  isolation: isolate;
+  background: url(../../images/background.jpg) center center / cover fixed no-repeat;
+}
+
+#about h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 59px;
+  text-align: center;
+  color: #fff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+}
+
+/* === ABOUT VENUS (quote + 3 image cards) === */
+#about-venus {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.about-quote {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 52px;
+}
+
+.about-quote-title {
+  margin: 0 0 18px;
+  color: #1a1a1a;
+  font-size: 34px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.about-quote-text {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(26, 26, 26, 0.10);
+  border-color: #6aaa47;
+}
+
+.about-card-img {
+  height: 220px;
+  overflow: hidden;
+  background: #f4f7f1;
+}
+
+.about-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover .about-card-img img {
+  transform: scale(1.04);
+}
+
+.about-card-body {
+  padding: 28px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.about-card-body h3 {
+  margin: 0 0 8px;
+  color: #1a1a1a;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.about-card-body p {
+  margin: 0 0 16px;
+  color: #6b7280;
+  font-size: 14.5px;
+  line-height: 1.65;
+  flex-grow: 1;
+}
+
+.about-card-link {
+  color: #6aaa47;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.2s ease;
+}
+
+.about-card:hover .about-card-link {
+  gap: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #about-venus {
+    padding: 56px 16px;
+  }
+
+  .about-quote-title {
+    font-size: 26px;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card-img {
+    height: 200px;
+  }
+}
+
 .v-align {
   display: flex;
   align-items: center;
