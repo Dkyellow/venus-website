@@ -29,7 +29,7 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   border: 0;
-  background: url(../images/background.jpg) no-repeat;
+  background: url(../../images/background.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }

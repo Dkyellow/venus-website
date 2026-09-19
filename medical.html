@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <meta name="description" content="Accessible general medical care in Harare, Zimbabwe, including check-ups, diagnosis, treatment and referrals from Venus Healthcare Services.">
   <meta name="keywords" content="medical doctor Harare, general practitioner Zimbabwe, medical checkup Harare, Venus Healthcare medical">
@@ -20,6 +22,7 @@
   <meta name="twitter:description" content="General medical care, check-ups and treatment in Harare, Zimbabwe.">
   <meta name="twitter:image" content="https://venushealthcare.co.zw/images/services/medical-header.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalClinic","@id":"https://venushealthcare.co.zw/#clinic"},{"@type":"Service","name":"General Medical Care","serviceType":"General Practitioner","provider":{"@id":"https://venushealthcare.co.zw/#clinic"},"areaServed":{"@type":"City","name":"Harare"},"url":"https://venushealthcare.co.zw/medical.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://venushealthcare.co.zw/"},{"@type":"ListItem","position":2,"name":"Medical Services","item":"https://venushealthcare.co.zw/medical.html"}]}]}</script>
 </head>
 <body>
   <div class="medical-page">
@@ -105,7 +108,7 @@
         </div>
       </div>
       <div class="map-container">
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3798.7391838602857!2d31.0353074!3d-17.8039508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a50b3749319d%3A0xde0d867336bc53ed!2sVenus%20Dental%20%26%20Medical%20Surgery!5e0!3m2!1sen!2szw!4v1636477628759!5m2!1sen!2szw" allowfullscreen="" scrolling="no" loading="lazy"></iframe>
+        <iframe id="map" title="Venus Healthcare Services location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3798.7391838602857!2d31.0353074!3d-17.8039508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a50b3749319d%3A0xde0d867336bc53ed!2sVenus%20Dental%20%26%20Medical%20Surgery!5e0!3m2!1sen!2szw!4v1636477628759!5m2!1sen!2szw" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <form id="contactForm" method="post" class="appointment-form text-left">
         <div class="container flex flex-wrap mb-10">
@@ -122,14 +125,14 @@
             <label>
               <span class="input-label text-white">Phone Number</span>
               <span class="required-flag">*</span>
-              <input type="tel" name="phone" class="mt-1 block w-full rounded-md">
+              <input type="tel" name="phone" class="mt-1 block w-full rounded-md" required>
             </label>
           </div>
           <div class="w-full md:w-1/2 p-4">
             <label>
               <span class="input-label text-white">Message</span>
               <span class="required-flag">*</span>
-              <textarea name="message" rows="5" class="mt-1 block w-full rounded-md"></textarea>
+              <textarea name="message" rows="5" class="mt-1 block w-full rounded-md" required></textarea>
             </label>
             <div class="button-container text-center">
               <button type="submit" class="button input-label text-white font-bold py-2 px-4 rounded-full">Submit</button>
