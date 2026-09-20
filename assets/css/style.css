@@ -2548,10 +2548,11 @@ table {
 }
 
 .page-subtitle {
-  color: #e6f0e0;
+  color: #6b7280;
   font-size: 14px;
   margin-top: 8px;
   max-width: 520px;
+  line-height: 1.6;
 }
 
 .specialist-sections {
@@ -2583,101 +2584,143 @@ table {
 /* === SERVICE PAGES (Dental, Medical, Mental, Consultation) === */
 .page-container {
   margin-top: 82px;
-  background-size: no-repeat;
-  background-position-x: center;
-  height: 400px;
+  background: #ffffff;
+  height: auto;
+  min-height: unset;
   display: flex;
   align-items: center;
-}
-
-.page-container.dental-page {
-  background-image: url(../images/services/dental-header.jpg);
-}
-
-.page-container.medical-page {
-  background-image: url(../images/services/medical-header.jpg);
-}
-
-.page-container.mental-page {
-  background-image: url(../images/services/mental-header.jpg);
-}
-
-.page-container.consultation-page {
-  background-image: url(../images/services/consultation-header.jpg);
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0 28px;
+  border-bottom: 1px solid #eef2f7;
 }
 
 .page-container .title-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
-  height: 163px;
+  gap: 24px;
+  height: auto;
+  padding: 24px 32px;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .page-container .title-container .block-icon {
-  width: 560px;
-  height: 100%;
+  width: 84px;
+  height: 84px;
+  min-width: 84px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
 }
 
-.page-container.dental-page .title-container .block-icon {
-  background: rgba(13, 154, 235, 0.7);
-}
-
-.page-container.medical-page .title-container .block-icon {
-  background: rgba(105, 168, 63, 0.7);
-}
-
-.page-container.mental-page .title-container .block-icon {
-  background: rgba(255, 218, 23, 0.7);
-}
-
-.page-container.consultation-page .title-container .block-icon {
-  background: rgba(240, 75, 5, 0.7);
+.page-container.dental-page .title-container .block-icon,
+.page-container.medical-page .title-container .block-icon,
+.page-container.mental-page .title-container .block-icon,
+.page-container.consultation-page .title-container .block-icon,
+.page-container.dermatology-page .title-container .block-icon,
+.page-container.paediatrics-page .title-container .block-icon,
+.page-container.physiotherapy-page .title-container .block-icon,
+.page-container.ultrasound-page .title-container .block-icon,
+.page-container.specialist-page .title-container .block-icon {
+  background: rgba(255,255,255,0.96);
 }
 
 .page-container .title-container .block-icon img {
-  height: 70%;
-  margin-right: 30px;
-  filter: brightness(0) invert(1);
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: none;
 }
 
+.page-container .title-container .block-icon i {
+  font-size: 38px;
+  color: #6aaa47;
+  line-height: 1;
+}
+
+.page-container .title-container .title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.page-container.medical-page .title-container .block-icon i { color: #6aaa47; }
+.page-container.dental-page .title-container .block-icon i { color: #0d9beb; }
+.page-container.mental-page .title-container .block-icon i { color: #d4a017; }
+.page-container.consultation-page .title-container .block-icon i { color: #f04b05; }
+.page-container.dermatology-page .title-container .block-icon i { color: #6aaa47; }
+.page-container.paediatrics-page .title-container .block-icon i { color: #ff7a3d; }
+.page-container.physiotherapy-page .title-container .block-icon i { color: #753eb4; }
+.page-container.ultrasound-page .title-container .block-icon i { color: #0d9beb; }
+.page-container.specialist-page .title-container .block-icon i { color: #6aaa47; }
+
 .page-container .title-container .page-title {
-  color: #fff;
-  font-size: 71px;
-  font-weight: bold;
-  margin-left: 35px;
-  height: 100%;
-  line-height: 1em;
+  color: #1a1a1a;
+  font-size: 44px;
+  font-weight: 800;
+  margin-left: 0;
+  line-height: 1.1;
   text-align: left;
   letter-spacing: -0.02em;
   display: flex;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    height: 380px;
+  }
+
+  .page-container .title-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .page-container .title-container .block-icon {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+
+  .page-container .title-container .block-icon i {
+    font-size: 32px;
+  }
+
+  .page-container .title-container .title-text {
+    align-items: center;
+  }
+
+  .page-container .title-container .page-title {
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .page-container .title-container .page-subtitle {
+    text-align: center;
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .page-container {
-    height: 450px;
-  }
-
-  .page-container .title-container {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-
-  .page-container .title-container .block-icon {
-    width: 97vw;
-    margin-left: 5px;
-    justify-content: center;
-  }
-
-  .page-container .title-container .block-icon img {
-    margin: unset;
+    height: 340px;
   }
 
   .page-container .title-container .page-title {
-    font-size: 3em;
-    margin: unset;
+    font-size: 28px;
   }
 }
 
