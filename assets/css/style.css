@@ -1289,6 +1289,10 @@ table {
   margin: 14px 0;
 }
 
+.about-director-card .team-dash {
+  margin: 14px auto;
+}
+
 .team-qual {
   margin: 0;
   margin-top: auto;
