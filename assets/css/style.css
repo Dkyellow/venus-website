@@ -1723,12 +1723,39 @@ table {
   overflow: hidden;
   margin: 0 auto 20px;
   border: 4px solid #6aaa47;
+  position: relative;
+  cursor: pointer;
 }
 
 .about-director-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.director-bio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 42, 68, 0.82);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.32s ease;
+  border-radius: 50%;
+}
+
+.about-director-photo:hover .director-bio-overlay {
+  opacity: 1;
+}
+
+.director-bio-overlay p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .about-director-card h3 {
@@ -3893,5 +3920,12 @@ table {
   .about-director-photo {
     width: 180px;
     height: 180px;
+  }
+  .director-bio-overlay {
+    padding: 14px;
+  }
+  .director-bio-overlay p {
+    font-size: 11px;
+    line-height: 1.4;
   }
 }
