@@ -245,6 +245,23 @@ table {
   color: #000;
 }
 
+.navigation-container .main-nav ul li a.book-appointment-btn {
+  background: #ffffff;
+  color: #6aaa47;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92em;
+  height: auto;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.navigation-container .main-nav ul li a.book-appointment-btn:hover {
+  background: #f1f5f9;
+  color: #4a7a2f;
+}
+
 .navigation-container .main-nav ul li a.dropdown-arrow::after {
   content: "";
   position: relative;
