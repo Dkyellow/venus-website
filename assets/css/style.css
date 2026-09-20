@@ -29,9 +29,7 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   border: 0;
-  background: url(../../images/background.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: #ffffff;
 }
 
 .visually-hidden {
@@ -2548,7 +2546,7 @@ table {
 }
 
 .page-subtitle {
-  color: #6b7280;
+  color: #e6f0e0;
   font-size: 14px;
   margin-top: 8px;
   max-width: 520px;
@@ -2584,15 +2582,63 @@ table {
 /* === SERVICE PAGES (Dental, Medical, Mental, Consultation) === */
 .page-container {
   margin-top: 82px;
-  background: #ffffff;
-  height: auto;
-  min-height: unset;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 48px 0 28px;
-  border-bottom: 1px solid #eef2f7;
+}
+
+.page-container::before {
+  display: none;
+}
+
+.page-container .page-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.page-container.dental-page {
+  background-image: url(../images/services/dental-header.jpg);
+}
+
+.page-container.medical-page {
+  background-image: url(../images/services/medical-header.jpg);
+}
+
+.page-container.mental-page {
+  background-image: url(../images/services/mental-header.jpg);
+}
+
+.page-container.consultation-page {
+  background-image: url(../images/services/consultation-header.jpg);
+}
+
+.page-container.dermatology-page {
+  background-image: url("../images/services/dermatology-header.jpg");
+}
+
+.page-container.paediatrics-page {
+  background-image: url("../images/services/paediatrics-header.jpg");
+}
+
+.page-container.physiotherapy-page {
+  background-image: url("../images/services/physiotherapy-header.jpg");
+}
+
+.page-container.ultrasound-page {
+  background-image: url("../images/services/ultrasound-header.jpg");
+}
+
+.page-container.specialist-page {
+  background-image: url("../images/services/specialist-header.jpg");
 }
 
 .page-container .title-container {
@@ -2662,11 +2708,11 @@ table {
 .page-container.specialist-page .title-container .block-icon i { color: #6aaa47; }
 
 .page-container .title-container .page-title {
-  color: #1a1a1a;
-  font-size: 44px;
+  color: #fff;
+  font-size: 56px;
   font-weight: 800;
   margin-left: 0;
-  line-height: 1.1;
+  line-height: 1em;
   text-align: left;
   letter-spacing: -0.02em;
   display: flex;
