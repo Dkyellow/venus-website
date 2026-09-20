@@ -785,7 +785,9 @@ table {
 .services-carousel {
   position: relative;
   overflow: hidden;
-  height: 570px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
 }
 
 #services .carousel-container * {
@@ -808,63 +810,74 @@ table {
 }
 
 .custom-inner-content {
-  margin: 20px;
-  border-radius: 25px;
+  margin: 12px auto;
+  max-width: 380px;
+  width: calc(100% - 24px);
+  border-radius: 22px;
   overflow: hidden;
   background: white;
-  box-shadow: 10.71px 11.89px 38px 7px #0009, 0 0 #0009;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .custom-inner-content .card {
-  height: 505px;
+  height: 460px;
   display: flex;
   position: relative;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
-  padding-bottom: 20px;
+  justify-content: flex-start;
+  padding-bottom: 18px;
 }
 
 .custom-inner-content .card .title-container {
   position: relative;
   top: 0;
   left: 0;
-  height: 90px;
-  margin-top: 40px;
+  height: 72px;
+  margin-top: 28px;
   display: flex;
   width: 100%;
+  align-items: stretch;
 }
 
 .custom-inner-content .card .title-container .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110px;
+  width: 72px;
+  min-width: 72px;
+  border-radius: 0;
 }
 
 .custom-inner-content .card .title-container .icon img {
-  height: 80%;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
   filter: brightness(0) invert(1);
 }
 
 .custom-inner-content .card .title-container .icon i {
   color: #ffffff;
-  font-size: 42px;
+  font-size: 32px;
+  line-height: 1;
 }
 
 .custom-inner-content .card .title-container .card-title {
-  font-size: 28px;
-  line-height: 1.2em;
+  font-size: 19px;
+  line-height: 1.25em;
   display: flex;
   align-items: center;
-  height: 100%;
-  width: 285px;
+  height: auto;
+  flex: 1;
+  min-width: 0;
   background: white;
-  padding-left: 20px;
+  padding: 0 14px;
+  font-weight: 700;
 }
 
 .custom-inner-content .card .title-container .filler {
-  width: 10%;
+  width: 14px;
+  flex-shrink: 0;
 }
 
 .custom-inner-content .card .list-wrapper {
