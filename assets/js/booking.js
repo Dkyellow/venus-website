@@ -388,7 +388,12 @@ var VenusBooking = {
         var modal = document.getElementById('bookingSuccessModal');
         if (modal) {
             modal.classList.remove('active');
-            setTimeout(function () { modal.style.display = 'none'; }, 300);
+            setTimeout(function () {
+                modal.style.display = 'none';
+                window.location.reload();
+            }, 300);
+        } else {
+            window.location.reload();
         }
     },
 
