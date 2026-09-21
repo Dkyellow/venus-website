@@ -287,6 +287,7 @@ table {
   background: #6aaa47;
   position: absolute;
   height: auto;
+  align-items: flex-start;
   flex-direction: column;
   left: -20px;
   top: 100%;
@@ -462,10 +463,8 @@ table {
   width: 100%;
   height: auto;
   background: #fff;
-  border: 1px solid #eef1f5;
   border-radius: 10px;
   padding: 8px 12px;
-  box-shadow: 0 2px 12px rgba(15, 42, 68, 0.08);
 }
 
 .site-footer-brand p {
