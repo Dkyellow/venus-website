@@ -177,9 +177,12 @@ table {
   height: 82px;
   width: 100vw;
   display: flex;
-  justify-content: baseline;
+  justify-content: space-between;
+  align-items: center;
   background: #6aaa47;
   z-index: 2000;
+  padding-right: 20px;
+  gap: 24px;
 }
 
 .navigation-container .logo-container {
@@ -211,6 +214,8 @@ table {
 .navigation-container .main-nav {
   display: flex;
   align-items: center;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .navigation-container .main-nav ul {
@@ -219,14 +224,25 @@ table {
   margin: 0;
   list-style: none;
   align-items: center;
+  gap: 18px;
+  justify-content: flex-end;
 }
 
 .navigation-container .main-nav ul li {
-  margin: 0 32px;
+  margin: 0;
   height: 100%;
   position: relative;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 901px) {
+  .navigation-container .main-nav ul {
+    gap: 10px;
+  }
+  .navigation-container .main-nav ul li a {
+    font-size: 0.88em;
+  }
 }
 
 .navigation-container .main-nav ul li a {
@@ -236,6 +252,7 @@ table {
   color: #fff;
   text-decoration: none;
   font-size: 1em;
+  white-space: nowrap;
 }
 
 .navigation-container .main-nav ul li a:hover,
@@ -2602,8 +2619,8 @@ table {
 
 /* === SERVICE INTRO (individual service pages) === */
 .service-intro {
-  padding: 48px 0 56px;
-  background: #ffffff;
+  padding: 56px 0 64px;
+  background: #f9fafb;
 }
 
 .service-intro .container {
@@ -2613,20 +2630,45 @@ table {
 
 .service-intro-grid {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr;
-  gap: 32px;
-  align-items: start;
-  max-width: 1100px;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 28px;
+  align-items: stretch;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: left;
+  width: 100%;
+}
+
+.service-intro .container.service-intro-grid {
+  max-width: 1280px;
+}
+
+.service-intro-text {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 32px 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+  border: 1px solid #eef2f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-intro-media {
+  position: relative;
+  display: flex;
+  align-items: stretch;
 }
 
 .service-intro-media img {
   width: 100%;
-  border-radius: 12px;
+  height: 100%;
+  min-height: 420px;
+  border-radius: 16px;
   object-fit: cover;
-  aspect-ratio: 4/3;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  aspect-ratio: auto;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+  border: 1px solid #eef2f7;
 }
 
 .two-col-list {
@@ -2638,6 +2680,13 @@ table {
 @media screen and (max-width: 900px) {
   .service-intro-grid {
     grid-template-columns: 1fr;
+  }
+  .service-intro-media {
+    position: relative;
+    top: auto;
+  }
+  .service-intro-text {
+    padding: 20px;
   }
   .two-col-list {
     grid-template-columns: 1fr;
@@ -2666,11 +2715,13 @@ table {
 }
 
 .page-subtitle {
-  color: #e6f0e0;
-  font-size: 14px;
-  margin-top: 8px;
-  max-width: 520px;
-  line-height: 1.6;
+  color: #ffffff;
+  font-size: 17px;
+  margin-top: 10px;
+  max-width: 620px;
+  line-height: 1.65;
+  font-weight: 500;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.22);
 }
 
 .specialist-sections {
@@ -2681,9 +2732,13 @@ table {
 .specialist-section {
   background: #ffffff;
   border-radius: 12px;
-  padding: 32px;
+  padding: 28px;
   margin-bottom: 24px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 24px;
+  align-items: center;
 }
 
 .specialist-section h2 {
@@ -2697,6 +2752,33 @@ table {
   color: #4b5563;
   line-height: 1.7;
   margin-bottom: 16px;
+}
+
+.specialist-media img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eef2f7;
+}
+
+.specialist-section:nth-child(even) {
+  grid-template-columns: 0.85fr 1.35fr;
+}
+
+.specialist-section:nth-child(even) .specialist-media {
+  order: -1;
+}
+
+@media screen and (max-width: 900px) {
+  .specialist-section,
+  .specialist-section:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+  .specialist-section:nth-child(even) .specialist-media {
+    order: 0;
+  }
 }
 
 /* === SERVICE PAGES (Dental, Medical, Mental, Consultation) === */
