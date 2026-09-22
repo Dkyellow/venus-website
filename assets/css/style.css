@@ -214,8 +214,7 @@ table {
 .navigation-container .main-nav {
   display: flex;
   align-items: center;
-  flex: 1;
-  justify-content: flex-end;
+  flex: 0 1 auto;
 }
 
 .navigation-container .main-nav ul {
@@ -224,8 +223,8 @@ table {
   margin: 0;
   list-style: none;
   align-items: center;
-  gap: 18px;
-  justify-content: flex-end;
+  gap: 28px;
+  justify-content: center;
 }
 
 .navigation-container .main-nav ul li {
@@ -238,7 +237,7 @@ table {
 
 @media screen and (max-width: 1100px) and (min-width: 901px) {
   .navigation-container .main-nav ul {
-    gap: 10px;
+    gap: 16px;
   }
   .navigation-container .main-nav ul li a {
     font-size: 0.88em;
@@ -269,6 +268,7 @@ table {
   font-size: 0.92em;
   height: auto;
   line-height: 1;
+  margin-left: 18px;
   white-space: nowrap;
 }
 
