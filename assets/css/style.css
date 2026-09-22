@@ -826,6 +826,25 @@ table {
   #services .carousel-container > * {
     width: 80%;
   }
+
+  .services-carousel .carousel-arrows {
+    padding: 0 6px;
+    top: 48%;
+  }
+
+  .services-carousel .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(106,170,71,0.92);
+    color: #fff;
+    font-size: 1.1em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
 }
 
 /* === SERVICE CARDS === */
