@@ -177,12 +177,12 @@ table {
   height: 82px;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background: #6aaa47;
   z-index: 2000;
   padding-right: 20px;
-  gap: 24px;
+  gap: 32px;
 }
 
 .navigation-container .logo-container {
@@ -214,7 +214,8 @@ table {
 .navigation-container .main-nav {
   display: flex;
   align-items: center;
-  flex: 0 1 auto;
+  flex: 1;
+  justify-content: center;
 }
 
 .navigation-container .main-nav ul {
@@ -223,7 +224,7 @@ table {
   margin: 0;
   list-style: none;
   align-items: center;
-  gap: 28px;
+  gap: clamp(18px, 1.8vw, 36px);
   justify-content: center;
 }
 
@@ -237,7 +238,7 @@ table {
 
 @media screen and (max-width: 1100px) and (min-width: 901px) {
   .navigation-container .main-nav ul {
-    gap: 16px;
+    gap: clamp(12px, 1.2vw, 18px);
   }
   .navigation-container .main-nav ul li a {
     font-size: 0.88em;
