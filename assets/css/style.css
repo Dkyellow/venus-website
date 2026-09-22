@@ -629,6 +629,14 @@ table {
   background-position: center;
 }
 
+.header-carousel .slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.28) 45%, rgba(0,0,0,0.10) 100%);
+  z-index: 1;
+}
+
 .header-carousel .slide.active {
   opacity: 1;
   z-index: 1;
@@ -736,6 +744,15 @@ table {
   position: relative;
   padding-top: 20px;
   isolation: isolate;
+}
+
+#services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+  z-index: 0;
 }
 
 .services-bg {
