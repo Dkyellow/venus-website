@@ -178,19 +178,20 @@ table {
   width: 100vw;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   background: #6aaa47;
   z-index: 2000;
   padding-right: 20px;
-  gap: 32px;
+  gap: 0;
 }
 
 .navigation-container .logo-container {
-  padding: 0 20px;
+  padding: 0 32px 0 20px;
   display: flex;
   align-items: center;
   background: white;
   flex-shrink: 0;
+  height: 100%;
 }
 
 .navigation-container .logo-container #app-logo {
@@ -216,6 +217,7 @@ table {
   align-items: center;
   flex: 1;
   justify-content: center;
+  padding-left: 24px;
 }
 
 .navigation-container .main-nav ul {
@@ -1600,6 +1602,72 @@ table {
   color: #ffffff;
   font-weight: 600;
   margin: 0;
+}
+
+#newsletter-archive {
+  padding: 48px 0 56px;
+  background: #ffffff;
+  border-top: 1px solid #eef2f7;
+}
+
+#newsletter-archive .archive-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 6px;
+}
+
+#newsletter-archive .archive-sub {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0 0 24px;
+}
+
+.newsletter-archive-list {
+  list-style: none;
+  max-width: 560px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+  padding: 0;
+}
+
+.newsletter-archive-list li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: #f9fafb;
+  border: 1px solid #eef2f7;
+  border-radius: 12px;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.newsletter-archive-list li a:hover {
+  background: #ffffff;
+  border-color: #6aaa47;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.newsletter-archive-list li a i:first-child {
+  color: #6aaa47;
+  font-size: 18px;
+}
+
+.newsletter-archive-list li a span {
+  flex: 1;
+}
+
+.newsletter-archive-list li a i:last-child {
+  color: #9ca3af;
+  font-size: 14px;
 }
 
 /* === HOME GALLERY === */
