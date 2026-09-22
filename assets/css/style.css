@@ -2597,6 +2597,40 @@ table {
 
 .service-intro .container {
   max-width: 760px;
+  text-align: left;
+}
+
+.service-intro-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 32px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.service-intro-media img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.two-col-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 32px;
+}
+
+@media screen and (max-width: 900px) {
+  .service-intro-grid {
+    grid-template-columns: 1fr;
+  }
+  .two-col-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-intro p {
@@ -2720,6 +2754,10 @@ table {
   background-image: url("../images/services/specialist-header.jpg");
 }
 
+.page-container.pharmacy-page {
+  background-image: url("../images/services/pharmacy-header.jpg");
+}
+
 .page-container .title-container {
   position: relative;
   z-index: 2;
@@ -2753,7 +2791,8 @@ table {
 .page-container.paediatrics-page .title-container .block-icon,
 .page-container.physiotherapy-page .title-container .block-icon,
 .page-container.ultrasound-page .title-container .block-icon,
-.page-container.specialist-page .title-container .block-icon {
+.page-container.specialist-page .title-container .block-icon,
+.page-container.pharmacy-page .title-container .block-icon {
   background: rgba(255,255,255,0.96);
 }
 
@@ -2785,6 +2824,7 @@ table {
 .page-container.physiotherapy-page .title-container .block-icon i { color: #753eb4; }
 .page-container.ultrasound-page .title-container .block-icon i { color: #0d9beb; }
 .page-container.specialist-page .title-container .block-icon i { color: #6aaa47; }
+.page-container.pharmacy-page .title-container .block-icon i { color: #e67e22; }
 
 .page-container .title-container .page-title {
   color: #fff;
