@@ -283,15 +283,16 @@ table {
 
 .navigation-container .main-nav ul li .sublinks {
   display: none;
-  width: 160px;
+  width: 220px;
   background: #6aaa47;
   position: absolute;
   height: auto;
   align-items: flex-start;
   flex-direction: column;
-  left: -20px;
+  left: 0;
   top: 100%;
   z-index: 1001;
+  padding: 8px 0;
 }
 
 .navigation-container .main-nav ul li:hover .sublinks {
@@ -303,16 +304,26 @@ table {
 }
 
 .navigation-container .main-nav ul li .sublinks li {
-  margin: 8px 0;
+  margin: 0;
   height: auto;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.navigation-container .main-nav ul li .sublinks li:last-child {
+  border-bottom: none;
 }
 
 .navigation-container .main-nav ul li .sublinks li a {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
   width: 100%;
-  padding: 5px 20px;
+  padding: 10px 16px;
+  font-size: 0.92em;
+  line-height: 1.35;
 }
 
 @media screen and (max-width: 900px) {
