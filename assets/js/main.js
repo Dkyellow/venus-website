@@ -118,23 +118,47 @@ document.addEventListener('DOMContentLoaded', function () {
             if (serviceDots[currentService]) serviceDots[currentService].classList.add('active');
         }
 
+        var serviceInterval;
+
+        function startServiceAutoplay() {
+            stopServiceAutoplay();
+            serviceInterval = setInterval(function () { showService(currentService + 1); }, 4500);
+        }
+
+        function stopServiceAutoplay() {
+            if (serviceInterval) { clearInterval(serviceInterval); serviceInterval = null; }
+        }
+
         if (servicePrev) {
             servicePrev.addEventListener('click', function () {
+                stopServiceAutoplay();
                 showService(currentService - 1);
+                startServiceAutoplay();
             });
         }
 
         if (serviceNext) {
             serviceNext.addEventListener('click', function () {
+                stopServiceAutoplay();
                 showService(currentService + 1);
+                startServiceAutoplay();
             });
         }
 
         serviceDots.forEach(function (dot, index) {
             dot.addEventListener('click', function () {
+                stopServiceAutoplay();
                 showService(index);
+                startServiceAutoplay();
             });
         });
+
+        servicesCarousel.addEventListener('mouseenter', stopServiceAutoplay);
+        servicesCarousel.addEventListener('mouseleave', startServiceAutoplay);
+        servicesCarousel.addEventListener('touchstart', stopServiceAutoplay, { passive: true });
+        servicesCarousel.addEventListener('touchend', startServiceAutoplay);
+
+        startServiceAutoplay();
 
         function showServiceFromHash() {
             var target = window.location.hash.slice(1);
