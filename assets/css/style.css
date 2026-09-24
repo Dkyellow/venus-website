@@ -976,7 +976,7 @@ table {
 
 @media screen and (max-width: 480px) {
   .custom-inner-content {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .custom-inner-content .card .title-container .filler {

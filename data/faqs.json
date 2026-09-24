@@ -1,15 +1,11 @@
 [
   {
     "question": "Do I need an appointment or they can just walk in?",
-    "answer": "Yes! You do require an appointment."
+    "answer": "Yes. Appointments are required to ensure that a dedicated time slot is reserved for you.<br><br>To book, <a href=\"#appointments\">click here</a> or <a href=\"#contact\">contact us</a>."
   },
   {
     "question": "How do I schedule an appointment?",
     "answer": "You can call or send us a message on our WhatsApp numbers: <br> +263 719 341 917 – For medical appointments <br> +263 777 289 797 – For Dental Appointments <br> +263 242 339 280 – Our Landline Number"
-  },
-  {
-    "question": "Can I make same day appointments?",
-    "answer": "Yes. We keep appointments open each day for same day emergency appointments however these can get filled. Therefore, for your convenience, please phone ahead and book appointments in advance."
   },
   {
     "question": "What should I bring?",
@@ -45,11 +41,11 @@
   },
   {
     "question": "Do you offer online mental health services?",
-    "answer": "Yes, we offer telephone consultations for medical and mental health services. Call or send a message on <a href=\"tel:+263777289797\">+263 777 289 797</a>, to get more information on how to make a booking."
+    "answer": "Yes, we do"
   },
   {
     "question": "What time does the GP start?",
-    "answer": "The GP starts at 10am – 4:30pm on weekdays and on Saturday he starts at 9am – 12:30pm."
+    "answer": "The GP starts at 10am – 4:30pm on weekdays and on Saturday at 9am – 12:30pm."
   },
   {
     "question": "Do you admit patients here?",
