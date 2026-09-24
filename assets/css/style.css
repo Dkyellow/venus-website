@@ -922,13 +922,14 @@ table {
 }
 
 .custom-inner-content .card {
-  height: 460px;
+  height: auto;
   display: flex;
   position: relative;
   flex-direction: column;
   flex: 1;
   justify-content: flex-start;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
+  gap: 8px;
 }
 
 .custom-inner-content .card .title-container {
