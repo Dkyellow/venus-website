@@ -365,4 +365,129 @@ document.addEventListener('DOMContentLoaded', function () {
         startTeamAuto();
     }
 
+    // ============================================
+    // SERVICE PAGE IMAGE CAROUSEL (auto-change)
+    // ============================================
+    document.querySelectorAll('.service-intro-media').forEach(function (media) {
+        var slides = media.querySelectorAll('img');
+        if (slides.length < 2) return;
+
+        var idx = 0;
+        var timer = null;
+
+        function showSlide(next) {
+            slides[idx].classList.remove('active');
+            idx = (next + slides.length) % slides.length;
+            slides[idx].classList.add('active');
+        }
+
+        function stopSlides() {
+            if (timer) {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+
+        function startSlides() {
+            stopSlides();
+            timer = setInterval(function () {
+                showSlide(idx + 1);
+            }, 3000);
+        }
+
+        slides[0].classList.add('active');
+
+        media.addEventListener('mouseenter', stopSlides);
+        media.addEventListener('mouseleave', startSlides);
+        media.addEventListener('touchstart', stopSlides, { passive: true });
+        media.addEventListener('touchend', startSlides);
+
+        startSlides();
+    });
+
+    // ============================================
+    // SCROLL REVEAL ANIMATIONS
+    // ============================================
+    var reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+        document.documentElement.classList.add('js-anim');
+
+        var revealGroups = [
+            { sel: '.about-card, .about-director-card', variant: '' },
+            { sel: '.specialist-card', variant: 'zoom' },
+            { sel: '.home-gallery-item, .resources-gallery-item', variant: 'zoom' },
+            { sel: '.card-container', variant: '' },
+            { sel: '.news-card', variant: '' },
+            { sel: '.newsletter-archive-list li', variant: '' },
+            { sel: '.faq-right .question-item-container, .faq-page-list .question-item-container', variant: '' },
+            { sel: '.service-intro-text', variant: 'left' },
+            { sel: '.service-intro-media', variant: 'right' },
+            { sel: '.specialist-section', variant: '' },
+            { sel: '.site-footer-col', variant: '' }
+        ];
+
+        var revealEls = [];
+
+        revealGroups.forEach(function (group) {
+            document.querySelectorAll(group.sel).forEach(function (el) {
+                if (revealEls.indexOf(el) !== -1) return;
+                if (el.closest('.header-carousel, .services-carousel, .team-viewport, .vb-wrapper')) return;
+                el.setAttribute('data-reveal', group.variant);
+                revealEls.push(el);
+            });
+        });
+
+        var delayCounts = new Map();
+        revealEls.forEach(function (el) {
+            var parent = el.parentElement;
+            var i = delayCounts.get(parent) || 0;
+            delayCounts.set(parent, i + 1);
+            el.style.transitionDelay = Math.min(i, 4) * 90 + 'ms';
+        });
+
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                var el = entry.target;
+                var delay = parseInt(el.style.transitionDelay, 10) || 0;
+                el.classList.add('is-visible');
+                revealObserver.unobserve(el);
+                setTimeout(function () {
+                    el.removeAttribute('data-reveal');
+                    el.style.transitionDelay = '';
+                }, delay + 800);
+            });
+        }, { threshold: 0.01, rootMargin: '0px 0px -60px 0px' });
+
+        revealEls.forEach(function (el) {
+            revealObserver.observe(el);
+        });
+    }
+
+    // ============================================
+    // HEADER SCROLL STATE + SCROLL-TO-TOP BUTTON
+    // ============================================
+    var navContainer = document.querySelector('.navigation-container');
+    var scrollTopBtn = document.createElement('button');
+    scrollTopBtn.type = 'button';
+    scrollTopBtn.className = 'scroll-top-btn';
+    scrollTopBtn.setAttribute('aria-label', 'Back to top');
+    scrollTopBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+    document.body.appendChild(scrollTopBtn);
+
+    scrollTopBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+
+    function onScrollState() {
+        var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+        scrollTopBtn.classList.toggle('is-visible', y > 500);
+        if (navContainer) navContainer.classList.toggle('nav-scrolled', y > 40);
+    }
+
+    window.addEventListener('scroll', onScrollState, { passive: true });
+    onScrollState();
+
 });

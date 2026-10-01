@@ -2802,26 +2802,33 @@ table {
 
 .service-intro-media {
   position: relative;
-  display: grid;
-  gap: 16px;
-  align-content: start;
+  overflow: hidden;
+  border-radius: 16px;
+  align-self: center;
+  height: 470px;
+  max-height: 470px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+  border: 1px solid #eef2f7;
+  background: #eef2f7;
 }
 
 .service-intro-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  min-height: 380px;
-  max-height: 520px;
-  border-radius: 16px;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 4/3;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
-  border: 1px solid #eef2f7;
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-.service-intro-media:has(img:nth-child(2)) img {
-  min-height: 220px;
-  max-height: 340px;
+.service-intro-media img:first-child {
+  opacity: 1;
+}
+
+.service-intro-media img.active {
+  opacity: 1;
 }
 
 .two-col-list {
@@ -2837,6 +2844,10 @@ table {
   .service-intro-media {
     position: relative;
     top: auto;
+    align-self: start;
+    height: 320px;
+    min-height: 0;
+    max-height: 320px;
   }
   .service-intro-text {
     padding: 20px;
@@ -4291,6 +4302,219 @@ table {
     min-height: 0 !important;
     opacity: 1 !important;
     visibility: visible !important;
+  }
+}
+
+/* ============================================
+   MICRO-INTERACTIONS & SCROLL ANIMATIONS
+   ============================================ */
+
+/* --- Scroll reveal (armed by JS: html.js-anim) --- */
+html.js-anim [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+}
+html.js-anim [data-reveal="left"] { transform: translateX(-36px); }
+html.js-anim [data-reveal="right"] { transform: translateX(36px); }
+html.js-anim [data-reveal="zoom"] { transform: scale(0.93); }
+html.js-anim [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* --- Page header entrance on load --- */
+@keyframes vhFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+.page-title { animation: vhFadeUp 0.7s ease both; }
+.page-subtitle { animation: vhFadeUp 0.7s 0.12s ease both; }
+.header-carousel .slide-title,
+.header-carousel .slide-text { animation: vhFadeUp 0.8s ease both; }
+.header-carousel .slide-text { animation-delay: 0.15s; }
+
+/* --- Buttons: lift, shadow, press --- */
+.btn-primary,
+.appointment-form .button,
+.custom-inner-content .card .button-container .button {
+  transition: transform 0.22s ease, box-shadow 0.22s ease,
+    background-color 0.22s ease, opacity 0.3s ease;
+}
+.btn-primary:hover,
+.appointment-form .button:hover,
+.custom-inner-content .card .button-container .button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(15, 42, 68, 0.22);
+}
+.btn-primary:active,
+.appointment-form .button:active,
+.custom-inner-content .card .button-container .button:active {
+  transform: translateY(-1px) scale(0.97);
+  box-shadow: 0 4px 10px rgba(15, 42, 68, 0.18);
+}
+.faq-cta:hover { transform: translateY(-3px); }
+.about-card-link i { transition: transform 0.25s ease; display: inline-block; }
+.about-card:hover .about-card-link i { transform: translateX(5px); }
+
+/* --- Nav links: lift + dropdown item slide --- */
+.navigation-container .main-nav ul li a {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.navigation-container .main-nav ul li a:hover {
+  transform: translateY(-2px);
+}
+.navigation-container .main-nav ul li a.dropdown-arrow::after {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.navigation-container .main-nav ul li:hover > a.dropdown-arrow::after {
+  transform: rotate(45deg) translateY(2px);
+}
+.navigation-container .main-nav ul li .sublinks li a {
+  transition: color 0.2s ease, transform 0.2s ease, padding 0.2s ease;
+}
+.navigation-container .main-nav ul li .sublinks li a:hover {
+  transform: translateX(4px);
+}
+
+/* --- Header shadow while scrolling --- */
+.navigation-container {
+  transition: box-shadow 0.3s ease;
+}
+.navigation-container.nav-scrolled {
+  box-shadow: 0 6px 20px rgba(15, 42, 68, 0.25);
+}
+
+/* --- Service cards: lift + icon pop --- */
+.custom-inner-content .card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.custom-inner-content .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(15, 42, 68, 0.2);
+}
+.custom-inner-content .card .title-container .icon {
+  transition: transform 0.35s ease;
+}
+.custom-inner-content .card:hover .title-container .icon {
+  transform: translateY(-3px) scale(1.08);
+}
+
+/* --- Media carousel: slow zoom on hover --- */
+.service-intro-media img {
+  transition: opacity 0.6s ease, transform 4s ease;
+}
+.service-intro-media:hover img.active {
+  transform: scale(1.05);
+}
+
+/* --- Bullet lists: nudge on hover --- */
+.service-list-bullets li {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.service-list-bullets li:hover {
+  transform: translateX(6px);
+  color: #6aaa47;
+}
+.two-col-list li {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.two-col-list li:hover {
+  transform: translateX(4px);
+  color: #6aaa47;
+}
+
+/* --- Form focus glow --- */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #6aaa47;
+  box-shadow: 0 0 0 4px rgba(106, 170, 71, 0.16);
+}
+
+/* --- Footer links: draw underline --- */
+.site-footer-col ul li a {
+  background-image: linear-gradient(#6aaa47, #6aaa47);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1.5px;
+  transition: color 0.25s ease, background-size 0.3s ease;
+}
+.site-footer-col ul li a:hover {
+  background-size: 100% 1.5px;
+}
+
+/* --- WhatsApp FAB: pulse ring + pop --- */
+.whatsapp-fab {
+  transition: transform 0.25s ease, background-color 0.2s ease,
+    box-shadow 0.25s ease;
+  animation: vhPulse 2.8s ease-out infinite;
+}
+.whatsapp-fab:hover {
+  transform: scale(1.12);
+  background: #548d38;
+}
+@keyframes vhPulse {
+  0% { box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3), 0 0 0 0 rgba(106, 170, 71, 0.5); }
+  70% { box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3), 0 0 0 18px rgba(106, 170, 71, 0); }
+  100% { box-shadow: 0 4px 12px rgba(44, 62, 80, 0.3), 0 0 0 0 rgba(106, 170, 71, 0); }
+}
+
+/* --- Scroll-to-top button (injected by JS) --- */
+.scroll-top-btn {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 3000;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: #0f2a44;
+  color: #ffffff;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  box-shadow: 0 6px 16px rgba(15, 42, 68, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease,
+    background-color 0.2s ease;
+}
+.scroll-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top-btn:hover {
+  background: #6aaa47;
+  transform: translateY(-4px);
+}
+
+/* --- Reduced motion --- */
+@media print {
+  html.js-anim [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js-anim [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
 
