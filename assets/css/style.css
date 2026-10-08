@@ -620,11 +620,29 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 18px;
   padding-top: 18px;
   padding-bottom: 18px;
   font-size: 13.5px;
   color: #8a94a6;
   text-align: center;
+}
+
+.site-footer-credit a {
+  color: #6aaa47;
+  font-weight: 600;
+  text-decoration: none;
+  background-image: linear-gradient(#6aaa47, #6aaa47);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1.5px;
+  transition: background-size 0.3s ease, color 0.2s ease;
+}
+
+.site-footer-credit a:hover {
+  background-size: 100% 1.5px;
+  color: #548d38;
 }
 
 @media screen and (max-width: 900px) {
