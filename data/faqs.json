@@ -1,7 +1,7 @@
 [
   {
     "question": "Do I need an appointment or they can just walk in?",
-    "answer": "Yes. Appointments are required to ensure that a dedicated time slot is reserved for you.<br><br>To book, <a href=\"#appointments\">click here</a> or <a href=\"#contact\">contact us</a>."
+    "answer": "Yes. Appointments are required to ensure that a dedicated time slot is reserved for you.<br><br>To book, <a href=\"index.html#appointments\">click here</a> or <a href=\"contact.html#contact\">contact us</a>."
   },
   {
     "question": "How do I schedule an appointment?",
