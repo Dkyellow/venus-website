@@ -1360,9 +1360,6 @@ table {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1901 / 712;
-  object-fit: cover;
-  object-position: center;
   border-radius: 16px;
 }
 
@@ -2102,7 +2099,7 @@ table {
 }
 
 .about-card-img {
-  aspect-ratio: 1901 / 712;
+  height: 220px;
   overflow: hidden;
   background: #f4f7f1;
 }
@@ -2172,6 +2169,10 @@ table {
 
   .about-cards {
     grid-template-columns: 1fr;
+  }
+
+  .about-card-img {
+    height: 200px;
   }
 }
 
@@ -2838,7 +2839,7 @@ table {
 
 .service-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  grid-template-columns: 1.08fr 0.92fr;
   gap: 28px;
   align-items: stretch;
   max-width: 1280px;
@@ -2852,7 +2853,6 @@ table {
 }
 
 .service-intro-text {
-  min-width: 0;
   background: #ffffff;
   border-radius: 16px;
   padding: 32px 32px 28px;
@@ -2864,13 +2864,12 @@ table {
 }
 
 .service-intro-media {
-  min-width: 0;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
   align-self: center;
-  width: 100%;
-  aspect-ratio: 1901 / 712;
+  height: 470px;
+  max-height: 470px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.10);
   border: 1px solid #eef2f7;
   background: #eef2f7;
@@ -2903,12 +2902,15 @@ table {
 
 @media screen and (max-width: 900px) {
   .service-intro-grid {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
   .service-intro-media {
     position: relative;
     top: auto;
     align-self: start;
+    height: 320px;
+    min-height: 0;
+    max-height: 320px;
   }
   .service-intro-text {
     padding: 20px;
@@ -2988,12 +2990,10 @@ table {
 }
 
 .specialist-media img {
-  display: block;
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
-  object-position: center;
-  aspect-ratio: 1901 / 712;
+  aspect-ratio: 4/3;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   border: 1px solid #eef2f7;
 }
