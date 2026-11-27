@@ -668,8 +668,8 @@ table {
 .header-carousel {
   position: relative;
   overflow: hidden;
-  height: clamp(560px, 88vh, 740px);
-  min-height: 560px;
+  width: 100%;
+  aspect-ratio: 1901 / 712;
 }
 
 .header-carousel .slide {
@@ -780,17 +780,35 @@ table {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header-carousel .slide-content {
-    padding-left: 50px;
+    padding-bottom: 52px;
   }
 
   .header-carousel .slide-title {
-    font-size: 2.5em;
+    font-size: clamp(2em, 6vw, 3em);
   }
 
   .header-carousel .slide-text {
-    font-size: 1em;
+    font-size: clamp(1em, 2.5vw, 1.3em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-carousel .slide-content {
+    padding: 0 20px 26px;
+  }
+
+  .header-carousel .slide-title {
+    font-size: clamp(1.25em, 6vw, 1.6em);
+  }
+
+  .header-carousel .slide-text {
+    font-size: 0.8em;
+  }
+
+  .header-carousel .carousel-dots {
+    bottom: 6px;
   }
 }
 
@@ -1342,6 +1360,9 @@ table {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1901 / 712;
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
 }
 
@@ -1467,15 +1488,17 @@ table {
 
 .about-banner {
   position: relative;
-  height: 360px;
+  width: 100%;
+  aspect-ratio: 1901 / 712;
   overflow: hidden;
 }
 
 .about-banner-img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center;
 }
 
 .about-banner-overlay {
@@ -1502,6 +1525,22 @@ table {
   color: rgba(255, 255, 255, 0.85);
   font-size: 17px;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+  .about-banner-overlay {
+    padding: 0 20px;
+  }
+
+  #about .about-banner-title,
+  .about-banner .about-banner-title {
+    font-size: clamp(26px, 8vw, 32px);
+  }
+
+  .about-banner .about-banner-sub {
+    font-size: 12px;
+    line-height: 1.35;
+  }
 }
 
 .about-story {
@@ -2063,7 +2102,7 @@ table {
 }
 
 .about-card-img {
-  height: 220px;
+  aspect-ratio: 1901 / 712;
   overflow: hidden;
   background: #f4f7f1;
 }
@@ -2133,10 +2172,6 @@ table {
 
   .about-cards {
     grid-template-columns: 1fr;
-  }
-
-  .about-card-img {
-    height: 200px;
   }
 }
 
@@ -2803,7 +2838,7 @@ table {
 
 .service-intro-grid {
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
   gap: 28px;
   align-items: stretch;
   max-width: 1280px;
@@ -2817,6 +2852,7 @@ table {
 }
 
 .service-intro-text {
+  min-width: 0;
   background: #ffffff;
   border-radius: 16px;
   padding: 32px 32px 28px;
@@ -2828,12 +2864,13 @@ table {
 }
 
 .service-intro-media {
+  min-width: 0;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
   align-self: center;
-  height: 470px;
-  max-height: 470px;
+  width: 100%;
+  aspect-ratio: 1901 / 712;
   box-shadow: 0 12px 28px rgba(0,0,0,0.10);
   border: 1px solid #eef2f7;
   background: #eef2f7;
@@ -2866,15 +2903,12 @@ table {
 
 @media screen and (max-width: 900px) {
   .service-intro-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .service-intro-media {
     position: relative;
     top: auto;
     align-self: start;
-    height: 320px;
-    min-height: 0;
-    max-height: 320px;
   }
   .service-intro-text {
     padding: 20px;
@@ -2954,10 +2988,12 @@ table {
 }
 
 .specialist-media img {
+  display: block;
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
-  aspect-ratio: 4/3;
+  object-position: center;
+  aspect-ratio: 1901 / 712;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   border: 1px solid #eef2f7;
 }
@@ -2985,7 +3021,8 @@ table {
   margin-top: 82px;
   background-size: cover;
   background-position: center;
-  height: 420px;
+  width: 100%;
+  aspect-ratio: 1901 / 712;
   display: flex;
   align-items: center;
   position: relative;
@@ -3132,10 +3169,6 @@ table {
 }
 
 @media screen and (max-width: 768px) {
-  .page-container {
-    height: 380px;
-  }
-
   .page-container .title-container {
     flex-direction: column;
     align-items: center;
@@ -3172,12 +3205,32 @@ table {
 }
 
 @media screen and (max-width: 480px) {
-  .page-container {
-    height: 340px;
+  .page-container .title-container {
+    flex-direction: row;
+    gap: 8px;
+    padding: 8px 16px;
+  }
+
+  .page-container .title-container .block-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .page-container .title-container .title-text {
+    align-items: flex-start;
   }
 
   .page-container .title-container .page-title {
-    font-size: 28px;
+    font-size: clamp(18px, 5vw, 24px);
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .page-container .title-container .page-subtitle {
+    font-size: 10px;
+    line-height: 1.35;
+    text-align: left;
   }
 }
 
