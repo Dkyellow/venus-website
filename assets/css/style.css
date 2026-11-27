@@ -1334,6 +1334,15 @@ table {
 
 .team-viewport {
   overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-group-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
 }
 
 .team-track {
