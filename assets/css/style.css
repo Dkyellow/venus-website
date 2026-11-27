@@ -781,6 +781,10 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .header-carousel {
+    aspect-ratio: 16 / 9;
+  }
+
   .header-carousel .slide-content {
     padding-bottom: 52px;
   }
@@ -795,6 +799,10 @@ table {
 }
 
 @media screen and (max-width: 480px) {
+  .header-carousel {
+    aspect-ratio: 1 / 1;
+  }
+
   .header-carousel .slide-content {
     padding: 0 20px 26px;
   }
@@ -3231,6 +3239,28 @@ table {
     font-size: 10px;
     line-height: 1.35;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-carousel,
+  .about-banner,
+  .page-container {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-banner,
+  .page-container {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-banner,
+  .page-container {
+    aspect-ratio: 1 / 1;
   }
 }
 
